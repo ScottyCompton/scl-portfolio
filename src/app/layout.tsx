@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { QueryProvider } from "@/components/providers/query-provider"
+import { ErrorBoundary } from "@/components/ui/error-boundary"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,6 +17,34 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "SCL Portfolio - Mobile-First Developer Portfolio",
   description: "Personal portfolio showcasing modern web development projects with mobile-first responsive design",
+  keywords: ["web developer", "portfolio", "React", "Next.js", "TypeScript", "mobile-first"],
+  authors: [{ name: "Scott Compton" }],
+  creator: "Scott Compton",
+  publisher: "Scott Compton",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://your-domain.com',
+    title: 'SCL Portfolio - Mobile-First Developer Portfolio',
+    description: 'Personal portfolio showcasing modern web development projects with mobile-first responsive design',
+    siteName: 'SCL Portfolio',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SCL Portfolio - Mobile-First Developer Portfolio',
+    description: 'Personal portfolio showcasing modern web development projects with mobile-first responsive design',
+  },
 };
 
 export const viewport: Viewport = {
@@ -31,12 +60,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-                        <body
-                    className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100`}
-                  >
-        <QueryProvider>
-          {children}
-        </QueryProvider>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100`}
+      >
+        <ErrorBoundary>
+          <QueryProvider>
+            {children}
+          </QueryProvider>
+        </ErrorBoundary>
       </body>
     </html>
   );
