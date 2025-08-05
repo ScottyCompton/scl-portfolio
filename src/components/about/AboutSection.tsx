@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import { About } from '@/types'
 import { Button } from '@/components/ui/button'

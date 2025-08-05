@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { Menu, X } from 'lucide-react'
 import { useUIStore } from '@/lib/stores/ui-store'
+import { ThemeToggle } from '@/components/ui/theme-toggle'
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -49,11 +50,13 @@ export function Navigation() {
                   {item.label}
                 </a>
               ))}
+              <ThemeToggle />
             </div>
           </div>
 
           {/* Mobile Navigation Toggle */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-2">
+            <ThemeToggle />
             <Button
               variant="ghost"
               size="sm"

@@ -12,7 +12,7 @@ interface UIState {
 }
 
 export const useUIStore = create<UIState>((set) => ({
-  theme: 'light',
+  theme: typeof window !== 'undefined' ? localStorage.getItem('theme') as 'light' | 'dark' || 'light' : 'light',
   sidebarOpen: false,
   modalOpen: false,
   isMobile: false,
