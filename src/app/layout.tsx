@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { QueryProvider } from "@/components/providers/query-provider"
+import { ApolloProviderWrapper } from "@/components/providers/apollo-provider"
 import { ErrorBoundary } from "@/components/ui/error-boundary"
 
 const geistSans = Geist({
@@ -64,9 +65,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100`}
       >
         <ErrorBoundary>
-          <QueryProvider>
-            {children}
-          </QueryProvider>
+          <ApolloProviderWrapper>
+            <QueryProvider>
+              {children}
+            </QueryProvider>
+          </ApolloProviderWrapper>
         </ErrorBoundary>
       </body>
     </html>
