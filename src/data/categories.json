@@ -1,0 +1,49 @@
+{
+    "categories": [
+      {
+        "displayOrder": 0,
+        "active": true,
+        "_id": "60c4d9f78d9ea066f4a762cf",
+        "category": "Web Design",
+        "createdAt": "2021-06-12T15:59:51.879Z",
+        "updatedAt": "2021-06-12T15:59:51.879Z",
+        "__v": 0
+      },
+      {
+        "displayOrder": 3,
+        "active": true,
+        "_id": "60c4d9f78d9ea066f4a762d2",
+        "category": "Logo Design",
+        "createdAt": "2021-06-12T15:59:51.881Z",
+        "updatedAt": "2021-06-12T15:59:51.881Z",
+        "__v": 0
+      },
+      {
+        "displayOrder": 2,
+        "active": true,
+        "_id": "60c4d9f78d9ea066f4a762d1",
+        "category": "Graphic Design",
+        "createdAt": "2021-06-12T15:59:51.880Z",
+        "updatedAt": "2021-06-12T15:59:51.880Z",
+        "__v": 0
+      },
+      {
+        "displayOrder": 4,
+        "active": true,
+        "_id": "60c4d9f78d9ea066f4a762d3",
+        "category": "Print Media",
+        "createdAt": "2021-06-12T15:59:51.881Z",
+        "updatedAt": "2021-06-12T15:59:51.881Z",
+        "__v": 0
+      },
+      {
+        "displayOrder": 5,
+        "active": true,
+        "_id": "60c4d9f78d9ea066f4a762d4",
+        "category": "Special Projects",
+        "createdAt": "2021-06-12T15:59:51.881Z",
+        "updatedAt": "2021-06-12T15:59:51.881Z",
+        "__v": 0
+      }
+    ]
+}

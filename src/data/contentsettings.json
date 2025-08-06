@@ -1,0 +1,19 @@
+{
+    "settings": {
+      "_id": "60c4da218d9ea066f4a763b5",
+      "aboutBlurb": "Hi, I'm Scotty. Welcome to my personal portfolio site, and thanks for taking a moment to get to know me.<div><br></div><div>I'm a career full-stack developer, web and graphic designer with over 25 years of industry experience. So yea, I'm so old, I can still here the sound of a 14.4-baud modem buzzing when I close my eyes, and was a coder when most contemporary programmers were watching Teletubbies.&nbsp;</div><div><br></div><div>I've worked on projects of all sizes and flavors from small single page brochure websites to full enterprise and e-commerce applications.&nbsp; While I have worked as both backend, frontend and full-stack developer, my primary focus these days is&nbsp;<span style=\"font-size: 1rem;\">working with </span><b class=\"text-primary\">React, Redux and Redux Toolkit </b><span style=\"font-size: 1rem;\">primarily as a UI/UX developer.&nbsp;Still, I enjoy working with node.js and pure programming </span>exercises<span style=\"font-size: 1rem;\">&nbsp;every bit as much as I do UI/UX development.</span><div><br></div>\n\n<div><span style=\"font-size: 1rem;\">I actually don't consider myself a designer so much as a full-stack developer with decent Photoshop skills.  While I can do design(ish), I'm really at my best in an iterative Agile workflow environment in collaboration with a designer whose focus is on great user experience, and who is not afraid to test the limits of what is possible.  This leaves me free to do what I'm do best, which is to help bring a good designer's vision to life.\n\nI can honestly say that I very much enjoy what I do, and while it's been challenging at times to stay relevant in such a fast-moving industry, I've managed to adapt and become even better as time has moved on.&nbsp;</span><div><div><br></div><div>My hobbies include learning new technologies, perfecting the omelette, riding motorcycles, fitness, surfing, yoga, anything on the beach, travel, playing guitar (badly), posting pictures of my food online and petting ferule kittens.</div></div></div></div></div></div>",
+      "aboutTitle": "A Little About Me",
+      "contactEmail": "scott.lonis@outlook.com",
+      "contactPhone": "011-506-6477-7138 (Costa Rica)",
+      "facebookId": "",
+      "githubId": "",
+      "instagramId": "",
+      "linkedinUsername": "scott-lonis",
+      "resumeUrl": "https://firebasestorage.googleapis.com/v0/b/webfolio-4c731.appspot.com/o/settings%2Fscl_resume_with_faq.pdf?alt=media&token=443677a6-8641-4c63-b7c8-8ffa1f2a3258",
+      "siteTitle": "Scott C. Lonis - Programming and Graphic Design Portfolio",
+      "twitterHandle": "",
+      "youTubeId": "", 
+      "aboutImgUrl": "https://firebasestorage.googleapis.com/v0/b/webfolio-4c731.appspot.com/o/settings%2Fscotty_mowhawk.jpg?alt=media&token=9d014557-c2f2-47c1-b531-e822883e1c66",
+      "__v": 0
+    }
+}
