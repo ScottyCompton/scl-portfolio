@@ -31,7 +31,8 @@
         "tests/**/*.ts",
         "tests/**/*.tsx",
         "tests/**/*.spec.ts",
-        "tests/**/*.spec.tsx"
+        "tests/**/*.spec.tsx",
+        "src/app/api/data/index.ts"
     ],
     "exclude": ["node_modules"]
 }

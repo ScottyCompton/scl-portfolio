@@ -1,53 +1,20 @@
-import { NextResponse } from 'next/server'
-import { portfolioData, getPortfolioItemsWithCategories, getPortfolioItemsByCategory, getPortfolioItem } from '@/data/portfolio-data'
+import { resolvers } from '@/app/graphql/resolvers'
+import { typeDefs } from '@/app/graphql/schema'
+import { ApolloServer } from '@apollo/server'
+import { startServerAndCreateNextHandler } from '@as-integrations/next'
+import { NextRequest } from 'next/server'
 
-export async function GET(request: Request) {
-  const { searchParams } = new URL(request.url)
-  const query = searchParams.get('query')
-  
-  if (!query) {
-    return NextResponse.json({ error: 'Query parameter is required' }, { status: 400 })
-  }
+const server = new ApolloServer({
+    typeDefs,
+    resolvers,
+})
 
-  try {
-    let result: unknown = null
+const handler = startServerAndCreateNextHandler(server, {
+    context: async (req: NextRequest) => {
+        return { req }
+    },
+})
 
-    switch (query) {
-      case 'portfolioItems':
-        const categoryId = searchParams.get('categoryId')
-        if (categoryId) {
-          result = getPortfolioItemsByCategory(categoryId)
-        } else {
-          result = getPortfolioItemsWithCategories()
-        }
-        break
-
-      case 'portfolioItem':
-        const id = searchParams.get('id')
-        if (!id) {
-          return NextResponse.json({ error: 'ID parameter is required for portfolioItem query' }, { status: 400 })
-        }
-        result = getPortfolioItem(id)
-        break
-
-      case 'categories':
-        result = portfolioData.categories.filter(cat => cat.active)
-        break
-
-      case 'settings':
-        result = portfolioData.settings
-        break
-
-      case 'contactItems':
-        result = portfolioData.contactItems
-        break
-
-      default:
-        return NextResponse.json({ error: 'Invalid query' }, { status: 400 })
-    }
-
-    return NextResponse.json({ data: result })
-  } catch {
-    return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
-  }
-} 
+// Type the handlers to match Next.js API route expectations
+export const GET = handler as (request: NextRequest) => Promise<Response>
+export const POST = handler as (request: NextRequest) => Promise<Response>

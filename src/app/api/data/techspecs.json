@@ -1,0 +1,149 @@
+{
+    "techSpecs": [
+        {
+            "techSpec": "React",
+            "id": "60c4d9f78d9ea066f4a762cf",
+            "icon": "react"
+        },
+        {
+            "techSpec": "Redux",
+            "id": "60c4d9f78d9ea066f4a762d1",
+            "icon": "redux"
+        },
+        {
+            "techSpec": "Redux Toolkit",
+            "id": "60c4d9f78d9ea066f4a762d2",
+            "icon": "redux"
+        },
+        {
+            "techSpec": "Node.js",
+            "id": "60c4d9f78d9ea066f4a762d3",
+            "icon": "node-js"
+        },
+        {
+            "techSpec": "Express",
+            "id": "60c4d9f78d9ea066f4a762d4",
+            "icon": "express"
+        },
+        {
+            "techSpec": "WordPress",
+            "id": "60c4d9f78d9ea066f4a762d5",
+            "icon": "wordpress"
+        },
+        {
+            "techSpec": "PHP",
+            "id": "60c4d9f78d9ea066f4a762d6",
+            "icon": "php"
+        },
+        {
+            "techSpec": "MySQL",
+            "id": "60c4d9f78d9ea066f4a762d7",
+            "icon": "mysql"
+        },
+        {
+            "techSpec": "MongoDB",
+            "id": "60c4d9f78d9ea066f4a762d8",
+            "icon": "mongodb"
+        },
+        {
+            "techSpec": "Firebase",
+            "id": "60c4d9f78d9ea066f4a762d9",
+            "icon": "firebase"
+        },
+        {
+            "techSpec": "Google Cloud Platform",
+            "id": "60c4d9f78d9ea066f4a762da",
+            "icon": "google-cloud"
+        },
+        {
+            "techSpec": "Wix",
+            "id": "60c4d9f78d9ea066f4a762db",
+            "icon": "wix"
+        },
+        {
+            "techSpec": "Next.js",
+            "id": "60c4d9f78d9ea066f4a762dc",
+            "icon": "next-js"
+        },
+        {
+            "techSpec": "Tailwind CSS",
+            "id": "60c4d9f78d9ea066f4a762dd",
+            "icon": "tailwind"
+        },
+        {
+            "techSpec": "TypeScript",
+            "id": "60c4d9f78d9ea066f4a762de",
+            "icon": "typescript"
+        },
+        {
+            "techSpec": "JavaScript",
+            "id": "60c4d9f78d9ea066f4a762df",
+            "icon": "javascript"
+        },
+        {
+            "techSpec": "HTML5",
+            "id": "60c4d9f78d9ea066f4a762e0",
+            "icon": "html5"
+        },
+        {
+            "techSpec": "CSS3",
+            "id": "60c4d9f78d9ea066f4a762e1",
+            "icon": "css3"
+        },
+        {
+            "techSpec": "Bootstrap",
+            "id": "60c4d9f78d9ea066f4a762e2",
+            "icon": "bootstrap"
+        },
+        {
+            "techSpec": "jQuery",
+            "id": "60c4d9f78d9ea066f4a762e3",
+            "icon": "jquery"
+        },
+        {
+            "techSpec": "Adobe Photoshop",
+            "id": "60c4d9f78d9ea066f4a762e4",
+            "icon": "photoshop"
+        },
+        {
+            "techSpec": "Adobe Illustrator",
+            "id": "60c4d9f78d9ea066f4a762e5",
+            "icon": "illustrator"
+        },
+        {
+            "techSpec": "Laravel 5.7",
+            "id": "60c4d9f78d9ea066f4a762e6",
+            "icon": "laravel"
+        },
+        {
+            "techSpec": "Laravel 5.4",
+            "id": "60c4d9f78d9ea066f4a762e6",
+            "icon": "laravel"
+        },
+        {
+            "techSpec": "ElasticSearch",
+            "id": "60c4d9f78d9ea066f4a762e7",
+            "icon": "elasticsearch"
+        },
+        {
+            "techSpec": "Classic ASP",
+            "id": "60c4d9f78d9ea066f4a762e8",
+            "icon": "classic-asp"
+        },
+        {
+            "techSpec": "SQL Server",
+            "id": "60c4d9f78d9ea066f4a762e9",
+            "icon": "sql-server"
+        },
+        {
+            "techSpec": "Oracle",
+            "id": "60c4d9f78d9ea066f4a762ea",
+            "icon": "oracle"
+        },
+        {
+            "techSpec": "Video Streaming",
+            "id": "60c4d9f78d9ea066f4a762ea",
+            "icon": "video"
+        }
+    ]
+}

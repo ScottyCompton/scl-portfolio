@@ -1,16 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    async headers () {
+    async headers() {
         return [
             {
                 source: '/:path*',
                 headers: [
                     {
                         key: 'referrer-policy',
-                        value: 'no-referrer'
-                    }
-                ]
-            }
+                        value: 'no-referrer',
+                    },
+                ],
+            },
         ]
     },
     devIndicators: false,
@@ -20,14 +20,19 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'cardosystems.com',
                 pathname: '/cdn/shop/articles/**',
-            }
-        ]
+            },
+            {
+                protocol: 'https',
+                hostname: 'firebasestorage.googleapis.com',
+                pathname: '/v0/b/**',
+            },
+        ],
     },
     webpack: (config, { isServer, dev }) => {
         // Completely disable file watching in production builds
         if (!dev) {
             config.watchOptions = {
-                ignored: ['**/*']
+                ignored: ['**/*'],
             }
         } else {
             config.watchOptions = {
@@ -40,18 +45,18 @@ const nextConfig = {
                     '**/C:/Program Files/**',
                     '**/C:/Program Files (x86)/**',
                     '**/AppData/**',
-                    '**/Application Data/**'
-                ]
+                    '**/Application Data/**',
+                ],
             }
         }
-        
+
         // Disable file system caching that might cause issues
         config.infrastructureLogging = {
-            level: 'error'
+            level: 'error',
         }
-        
+
         return config
-    }
+    },
 }
 
 module.exports = nextConfig
