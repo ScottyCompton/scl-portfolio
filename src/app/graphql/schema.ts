@@ -6,11 +6,12 @@ export const typeDefs = gql`
         projectTitle: String!
         shortDesc: String!
         longDesc: String
-        techSpecs: [String!]!
+        techSpecs: [String!]
         previewImgUrl: String
         auxImgs: [AuxImage!]!
+        auxImgAspectRatio: Float
         projectUrl: String
-        githubUrl: String
+        repoUrl: String
         published: Boolean!
         categories: [Category!]!
     }
@@ -54,9 +55,9 @@ export const typeDefs = gql`
 
     type TechSpec {
         _id: ID!
-        techSpec: String!
-        icon: String!
-        displayOrder: Int!
+        title: String!
+        from: String!
+        to: String
     }
 
     type Query {

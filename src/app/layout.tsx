@@ -19,9 +19,9 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-    title: 'SCL Portfolio - Mobile-First Developer Portfolio',
+    title: 'Portfolio of Scott C. Lonis',
     description:
-        'Personal portfolio showcasing modern web development projects with mobile-first responsive design',
+        'Full-stack developer, web and graphic designer with over 25 years of industry experience',
     keywords: [
         'web developer',
         'portfolio',
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
         'TypeScript',
         'mobile-first',
     ],
-    authors: [{ name: 'Scott Compton' }],
-    creator: 'Scott Compton',
-    publisher: 'Scott Compton',
+    authors: [{ name: 'Scott Lonis' }],
+    creator: 'Scott Lonis',
+    publisher: 'Scott Lonis',
     robots: {
         index: true,
         follow: true,
@@ -47,15 +47,15 @@ export const metadata: Metadata = {
     openGraph: {
         type: 'website',
         locale: 'en_US',
-        url: 'https://your-domain.com',
-        title: 'SCL Portfolio - Mobile-First Developer Portfolio',
+        url: 'https://scottlonis.com',
+        title: 'Portfolio of Scott C. Lonis',
         description:
-            'Personal portfolio showcasing modern web development projects with mobile-first responsive design',
+            'Full-stack developer, web and graphic designer with over 25 years of industry experience',
         siteName: 'SCL Portfolio',
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'SCL Portfolio - Mobile-First Developer Portfolio',
+        title: 'Portfolio of Scott C. Lonis',
         description:
             'Personal portfolio showcasing modern web development projects with mobile-first responsive design',
     },
@@ -75,7 +75,7 @@ export default function RootLayout({
     return (
         <html lang="en" className="scroll-smooth">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+                className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-br from-gray-500 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 min-h-screen`}
             >
                 <ErrorBoundary>
                     <ThemeProvider>

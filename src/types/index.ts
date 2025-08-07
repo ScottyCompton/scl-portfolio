@@ -49,9 +49,7 @@ export interface ContentSettings {
 
 export interface TechSpec {
     _id: string
-    techSpec: string
-    icon: string
-    displayOrder: number
+    title: string
 }
 
 export interface SliderArrowProps {

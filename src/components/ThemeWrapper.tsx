@@ -9,19 +9,19 @@ interface ThemeWrapperProps {
 }
 
 const ThemeWrapper = ({ children }: ThemeWrapperProps) => {
-    const { resolvedTheme } = useTheme()
+    const { theme } = useTheme()
 
     useEffect(() => {
         // Apply dark mode class to document for Tailwind CSS
-        if (resolvedTheme === 'dark') {
+        if (theme === 'dark') {
             document.documentElement.classList.add('dark')
         } else {
             document.documentElement.classList.remove('dark')
         }
-    }, [resolvedTheme])
+    }, [theme])
 
     return (
-        <Theme appearance={resolvedTheme} accentColor="blue" grayColor="slate">
+        <Theme appearance={theme} accentColor="blue" grayColor="slate">
             {children}
         </Theme>
     )

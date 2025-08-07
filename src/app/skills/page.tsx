@@ -1,36 +1,52 @@
+'use client'
+
 import { Navigation } from '@/components/layout/Navigation'
+import SkillsBarChart from '@/components/SkillsBarChart'
+import { useQuery } from '@apollo/client'
+import { GET_TECH_SPECS_QUERY } from '@/app/graphql/queries'
 
 const SkillsPage = () => {
+    const { data, loading, error } = useQuery(GET_TECH_SPECS_QUERY)
+
     return (
-        <div className="min-h-screen bg-gray-50">
+        <div className="min-h-screen">
             <Navigation />
 
             <main className="pt-16">
                 {/* Header */}
                 <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
                     <div className="max-w-7xl mx-auto text-center">
-                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
                             Skills & Experience
                         </h1>
-                        <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-                            A fancy layout of all my skills and experience will
-                            go here.
+                        <p className="text-sm sm:text-sm leading-relaxed">
+                            A comprehensive overview of my technical skills and
+                            years of experience across various technologies.
                         </p>
                     </div>
                 </section>
 
-                {/* Filters */}
-                {/* <ProjectFilters 
-            projects={mockProjects}
-            categories={mockCategories}
-          /> */}
+                {/* Skills Bar Chart */}
+                <section className="px-4 sm:px-6 lg:px-8 py-6">
+                    {loading && (
+                        <div className="flex justify-center items-center min-h-[60vh]">
+                            <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-blue-600 dark:border-blue-400"></div>
+                        </div>
+                    )}
 
-                {/* All Projects */}
-                {/* <ProjectGrid 
-            projects={mockProjects}
-            title="All Projects"
-            description="Browse through my complete collection of web development projects"
-          /> */}
+                    {error && (
+                        <div className="text-center py-12">
+                            <p className="text-red-600 dark:text-red-400">
+                                Error loading skills data. Please try again
+                                later.
+                            </p>
+                        </div>
+                    )}
+
+                    {data?.techSpecs && (
+                        <SkillsBarChart techSpecs={data.techSpecs} />
+                    )}
+                </section>
             </main>
         </div>
     )

@@ -1,9 +1,8 @@
 'use client'
 
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { Mail, Phone, Globe, Github, Linkedin, Twitter } from 'lucide-react'
+import { Mail, Phone } from 'lucide-react'
 
 import { useQuery } from '@apollo/client'
 import { GET_CONTENT_SETTINGS_QUERY } from '@/app/graphql/queries'
@@ -22,17 +21,7 @@ const AboutSection = () => {
         siteTitle,
         linkedinUsername,
         githubId,
-        twitterHandle,
-        facebookId,
-        instagramId,
-        youTubeId,
     } = data.contentSettings
-
-    const socialIcons = {
-        github: Github,
-        linkedin: Linkedin,
-        twitter: Twitter,
-    }
 
     return (
         <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">

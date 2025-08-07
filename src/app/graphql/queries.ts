@@ -12,11 +12,17 @@ const GET_PORTFOLIO_ITEMS_QUERY = gql`
 `
 
 const GET_PORTFOLIO_ITEM_QUERY = gql`
-    query GetPortfolioItem($id: String!) {
+    query GetPortfolioItem($id: ID!) {
         portfolioItem(id: $id) {
             _id
-            title
-            description
+            projectTitle
+            shortDesc
+            longDesc
+            techSpecs
+            previewImgUrl
+            repoUrl
+            projectUrl
+            auxImgAspectRatio
         }
     }
 `
@@ -35,8 +41,10 @@ const GET_CATEGORIES_QUERY = gql`
 const GET_TECH_SPECS_QUERY = gql`
     query GetTechSpecs {
         techSpecs {
-            id
-            name
+            _id
+            title
+            from
+            to
         }
     }
 `

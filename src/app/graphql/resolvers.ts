@@ -50,6 +50,10 @@ export const resolvers = {
         techSpecs: () => {
             return techSpecData.techSpecs
         },
+
+        techSpec: (_: unknown, { id }: { id: string }) => {
+            return techSpecData.techSpecs.find((tech) => tech._id === id)
+        },
     },
 
     // PortfolioItem type resolvers
@@ -79,10 +83,9 @@ export const resolvers = {
             }
             return parent.techSpecs
                 .map((techSpecId: string) => {
-                    const techSpec = techSpecData.techSpecs.find(
-                        (tech) => tech.id === techSpecId
+                    return techSpecData.techSpecs.find(
+                        (tech) => tech._id === techSpecId
                     )
-                    return techSpec ? techSpec.techSpec : null
                 })
                 .filter(Boolean)
         },

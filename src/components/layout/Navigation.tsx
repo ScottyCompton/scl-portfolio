@@ -42,7 +42,7 @@ export function Navigation() {
                     <div className="flex-shrink-0">
                         <h1 className="text-xl font-bold text-gray-900 dark:text-white">
                             <Link href="/" aria-label="Go to homepage">
-                                SCL Portfolio
+                                Professional Portfolio
                             </Link>
                         </h1>
                     </div>

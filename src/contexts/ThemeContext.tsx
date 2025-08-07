@@ -2,21 +2,17 @@
 
 import React, { createContext, useContext, useEffect, useState } from 'react'
 
-type Theme = 'light' | 'dark' | 'system'
+type Theme = 'light' | 'dark'
 
 interface ThemeContextType {
     theme: Theme
     setTheme: (theme: Theme) => void
-    resolvedTheme: 'light' | 'dark'
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-    const [theme, setTheme] = useState<Theme>('system')
-    const [resolvedTheme, setResolvedTheme] = useState<'light' | 'dark'>(
-        'light'
-    )
+    const [theme, setTheme] = useState<Theme>('light')
 
     useEffect(() => {
         // Load theme from localStorage on mount
@@ -29,35 +25,10 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     useEffect(() => {
         // Save theme to localStorage
         localStorage.setItem('theme', theme)
-
-        // Determine resolved theme
-        if (theme === 'system') {
-            const systemTheme = window.matchMedia(
-                '(prefers-color-scheme: dark)'
-            ).matches
-                ? 'dark'
-                : 'light'
-            setResolvedTheme(systemTheme)
-        } else {
-            setResolvedTheme(theme)
-        }
-    }, [theme])
-
-    useEffect(() => {
-        // Listen for system theme changes
-        if (theme === 'system') {
-            const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
-            const handleChange = (e: MediaQueryListEvent) => {
-                setResolvedTheme(e.matches ? 'dark' : 'light')
-            }
-
-            mediaQuery.addEventListener('change', handleChange)
-            return () => mediaQuery.removeEventListener('change', handleChange)
-        }
     }, [theme])
 
     return (
-        <ThemeContext.Provider value={{ theme, setTheme, resolvedTheme }}>
+        <ThemeContext.Provider value={{ theme, setTheme }}>
             {children}
         </ThemeContext.Provider>
     )

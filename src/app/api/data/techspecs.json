@@ -1,149 +1,150 @@
 {
     "techSpecs": [
         {
-            "techSpec": "React",
-            "id": "60c4d9f78d9ea066f4a762cf",
-            "icon": "react"
+            "title": "React",
+            "_id": "60c4d9f78d9ea066f4a762cf",
+            "from": "2015"
         },
         {
-            "techSpec": "Redux",
-            "id": "60c4d9f78d9ea066f4a762d1",
-            "icon": "redux"
+            "title": "Redux",
+            "_id": "60c4d9f78d9ea066f4a762d1",
+            "from": "2015"
         },
         {
-            "techSpec": "Redux Toolkit",
-            "id": "60c4d9f78d9ea066f4a762d2",
-            "icon": "redux"
+            "title": "Redux Toolkit",
+            "_id": "60c4d9f78d9ea066f4a762d2",
+            "from": "2020"
         },
         {
-            "techSpec": "Node.js",
-            "id": "60c4d9f78d9ea066f4a762d3",
-            "icon": "node-js"
+            "title": "Node.js",
+            "_id": "60c4d9f78d9ea066f4a762d3",
+            "from": "2015"
         },
         {
-            "techSpec": "Express",
-            "id": "60c4d9f78d9ea066f4a762d4",
-            "icon": "express"
+            "title": "Express",
+            "_id": "60c4d9f78d9ea066f4a762d4",
+            "from": "2015"
         },
         {
-            "techSpec": "WordPress",
-            "id": "60c4d9f78d9ea066f4a762d5",
-            "icon": "wordpress"
+            "title": "WordPress",
+            "_id": "60c4d9f78d9ea066f4a762d5",
+            "from": "2004"
         },
         {
-            "techSpec": "PHP",
-            "id": "60c4d9f78d9ea066f4a762d6",
-            "icon": "php"
+            "title": "PHP",
+            "_id": "60c4d9f78d9ea066f4a762d6",
+            "from": "2004"
         },
         {
-            "techSpec": "MySQL",
-            "id": "60c4d9f78d9ea066f4a762d7",
-            "icon": "mysql"
+            "title": "MySQL",
+            "_id": "60c4d9f78d9ea066f4a762d7",
+            "from": "2004"
         },
         {
-            "techSpec": "MongoDB",
-            "id": "60c4d9f78d9ea066f4a762d8",
-            "icon": "mongodb"
+            "title": "MongoDB",
+            "_id": "60c4d9f78d9ea066f4a762d8",
+            "from": "2020"
         },
         {
-            "techSpec": "Firebase",
-            "id": "60c4d9f78d9ea066f4a762d9",
-            "icon": "firebase"
+            "title": "Firebase",
+            "_id": "60c4d9f78d9ea066f4a762d9",
+            "from": "2022"
         },
         {
-            "techSpec": "Google Cloud Platform",
-            "id": "60c4d9f78d9ea066f4a762da",
-            "icon": "google-cloud"
+            "title": "Google Cloud Platform",
+            "_id": "60c4d9f78d9ea066f4a762da",
+            "from": "2022"
         },
         {
-            "techSpec": "Wix",
-            "id": "60c4d9f78d9ea066f4a762db",
-            "icon": "wix"
+            "title": "Wix",
+            "_id": "60c4d9f78d9ea066f4a762db",
+            "from": "2022",
+            "to": "2023"
         },
         {
-            "techSpec": "Next.js",
-            "id": "60c4d9f78d9ea066f4a762dc",
-            "icon": "next-js"
+            "title": "Next.js",
+            "_id": "60c4d9f78d9ea066f4a762dc",
+            "from": "2022"
         },
         {
-            "techSpec": "Tailwind CSS",
-            "id": "60c4d9f78d9ea066f4a762dd",
-            "icon": "tailwind"
+            "title": "Tailwind CSS",
+            "_id": "60c4d9f78d9ea066f4a762dd",
+            "from": "2023"
         },
         {
-            "techSpec": "TypeScript",
-            "id": "60c4d9f78d9ea066f4a762de",
-            "icon": "typescript"
+            "title": "TypeScript",
+            "_id": "60c4d9f78d9ea066f4a762de",
+            "from": "2022"
         },
         {
-            "techSpec": "JavaScript",
-            "id": "60c4d9f78d9ea066f4a762df",
-            "icon": "javascript"
+            "title": "JavaScript",
+            "_id": "60c4d9f78d9ea066f4a762df",
+            "from": "1998"
         },
         {
-            "techSpec": "HTML5",
-            "id": "60c4d9f78d9ea066f4a762e0",
-            "icon": "html5"
+            "title": "HTML/HTML5",
+            "_id": "60c4d9f78d9ea066f4a762e0",
+            "from": "1996"
         },
         {
-            "techSpec": "CSS3",
-            "id": "60c4d9f78d9ea066f4a762e1",
-            "icon": "css3"
+            "title": "CSS3",
+            "_id": "60c4d9f78d9ea066f4a762e1",
+            "from": "2000"
         },
         {
-            "techSpec": "Bootstrap",
-            "id": "60c4d9f78d9ea066f4a762e2",
-            "icon": "bootstrap"
+            "title": "Bootstrap",
+            "_id": "60c4d9f78d9ea066f4a762e2",
+            "from": "2012"
         },
         {
-            "techSpec": "jQuery",
-            "id": "60c4d9f78d9ea066f4a762e3",
-            "icon": "jquery"
+            "title": "jQuery",
+            "_id": "60c4d9f78d9ea066f4a762e3",
+            "from": "2006"
         },
         {
-            "techSpec": "Adobe Photoshop",
-            "id": "60c4d9f78d9ea066f4a762e4",
-            "icon": "photoshop"
+            "title": "Adobe Photoshop",
+            "_id": "60c4d9f78d9ea066f4a762e4",
+            "from": "2000"
         },
         {
-            "techSpec": "Adobe Illustrator",
-            "id": "60c4d9f78d9ea066f4a762e5",
-            "icon": "illustrator"
+            "title": "Adobe Illustrator",
+            "_id": "60c4d9f78d9ea066f4a762e5",
+            "from": "2000"
         },
         {
-            "techSpec": "Laravel 5.7",
-            "id": "60c4d9f78d9ea066f4a762e6",
-            "icon": "laravel"
+            "title": "Laravel",
+            "_id": "60c4d9f78d9ea066f4a762e6",
+            "from": "2017",
+            "to": "2019"
         },
         {
-            "techSpec": "Laravel 5.4",
-            "id": "60c4d9f78d9ea066f4a762e6",
-            "icon": "laravel"
+            "title": "ElasticSearch",
+            "_id": "60c4d9f78d9ea066f4a762e7",
+            "from": "2019",
+            "to": "2020"
         },
         {
-            "techSpec": "ElasticSearch",
-            "id": "60c4d9f78d9ea066f4a762e7",
-            "icon": "elasticsearch"
+            "title": "Classic ASP",
+            "_id": "60c4d9f78d9ea066f4a762e8",
+            "from": "2000",
+            "to": "2010"
         },
         {
-            "techSpec": "Classic ASP",
-            "id": "60c4d9f78d9ea066f4a762e8",
-            "icon": "classic-asp"
+            "title": "SQL Server",
+            "_id": "60c4d9f78d9ea066f4a762e9",
+            "from": "2000"
         },
         {
-            "techSpec": "SQL Server",
-            "id": "60c4d9f78d9ea066f4a762e9",
-            "icon": "sql-server"
+            "title": "Oracle",
+            "_id": "60c4d9f78d9ea066f4a762ea",
+            "from": "2020",
+            "to": "2021"
         },
         {
-            "techSpec": "Oracle",
-            "id": "60c4d9f78d9ea066f4a762ea",
-            "icon": "oracle"
-        },
-        {
-            "techSpec": "Video Streaming",
-            "id": "60c4d9f78d9ea066f4a762ea",
-            "icon": "video"
+            "title": "Video Streaming",
+            "_id": "60c4d9f78d9ea066f4a762eb",
+            "from": "2010",
+            "to": "2015"
         }
     ]
 }

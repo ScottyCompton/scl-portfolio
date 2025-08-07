@@ -15,21 +15,42 @@ import SliderArrow from '@/components/SliderArrow'
 import { GET_PORTFOLIO_ITEMS_QUERY } from '@/app/graphql/queries'
 import { useQuery } from '@apollo/client'
 
-const CatRail = ({ categoryId }: { categoryId: string }) => {
+interface CatRailProps {
+    categoryId: string
+    openModal: (project: PortfolioItem) => void
+}
+
+const CatRail = ({ categoryId, openModal }: CatRailProps) => {
+    // const [selectedProject, setSelectedProject] =
+    //     useState<PortfolioItem | null>(null)
+    // const [isModalOpen, setIsModalOpen] = useState(false)
+
     const { data, loading, error } = useQuery(GET_PORTFOLIO_ITEMS_QUERY, {
         variables: {
             categoryId: categoryId,
         },
     })
+
     if (loading) return <p>Loading...</p>
     if (error) return <p>Error: {error.message}</p>
     const { portfolioItems } = data
+
+    const handleProjectClick = (project: PortfolioItem) => {
+        // setSelectedProject(project)
+        // setIsModalOpen(true)
+        openModal(project)
+    }
+
+    // const closeModal = () => {
+    //     setIsModalOpen(false)
+    //     setSelectedProject(null)
+    // }
 
     const settings = {
         dots: false,
         infinite: true,
         speed: 2000,
-        slidesToScroll: 1,
+        slidesToScroll: 5,
         centerMode: false,
         initialSlide: 0,
         ladyLoad: true,
@@ -87,29 +108,35 @@ const CatRail = ({ categoryId }: { categoryId: string }) => {
     }
 
     return (
-        <div className="slider-container w-full relative">
-            <Slider {...settings}>
-                {portfolioItems &&
-                    portfolioItems.map((item: PortfolioItem) => (
-                        <div
-                            className="text-center w-full flex flex-col items-center"
-                            key={item._id}
-                        >
-                            <Image
-                                src={item.previewImgUrl!}
-                                alt={item.projectTitle}
-                                width={400}
-                                height={300}
-                                className="mx-auto rounded-full object-cover w-48 h-48"
-                            />
-                            {/* <a href={`/portfolio/${item._id}`}>{item.projectTitle}</a> */}
-                            <div className="text-center text-sm sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed mt-2">
-                                {item.projectTitle}
+        <>
+            <div className="slider-container w-full relative">
+                <Slider {...settings}>
+                    {portfolioItems &&
+                        portfolioItems.map((item: PortfolioItem) => (
+                            <div
+                                className="text-center w-full flex flex-col items-center"
+                                key={item._id}
+                            >
+                                <div
+                                    className="relative group cursor-pointer"
+                                    onClick={() => handleProjectClick(item)}
+                                >
+                                    <Image
+                                        src={item.previewImgUrl!}
+                                        alt={item.projectTitle}
+                                        width={400}
+                                        height={300}
+                                        className="mx-auto rounded-full object-cover w-48 h-48 border-2 border-gray-200 dark:border-transparent transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:brightness-75 pointer-events-none"
+                                    />
+                                </div>
+                                <div className="text-center text-sm sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed mt-2">
+                                    {item.projectTitle}
+                                </div>
                             </div>
-                        </div>
-                    ))}
-            </Slider>
-        </div>
+                        ))}
+                </Slider>
+            </div>
+        </>
     )
 }
 

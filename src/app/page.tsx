@@ -11,7 +11,7 @@ import 'slick-carousel/slick/slick-theme.css'
 
 export default function Home() {
     return (
-        <div className="min-h-screen">
+        <div className="relative">
             {/* Navigation */}
             <Navigation />
 
