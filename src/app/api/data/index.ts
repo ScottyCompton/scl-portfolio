@@ -3,6 +3,7 @@ import categoryData from './categories.json'
 import techSpecData from './techspecs.json'
 import contentSettingsData from './contentsettings.json'
 import contactItemsData from './contactitems.json'
+import professionalHighlightsData from './professional_highlights.json'
 
 export {
     portfolioData,
@@ -10,4 +11,5 @@ export {
     techSpecData,
     contentSettingsData,
     contactItemsData,
+    professionalHighlightsData,
 }

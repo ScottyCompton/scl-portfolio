@@ -1,0 +1,308 @@
+{
+    "highlights": [
+        {
+            "jobTitle": "Full-Stack Applications Developer",
+            "orgName": "Optum Financial, Inc.",
+            "location": "Dallas, TX (remote)",
+            "startDate": "Dec 2023",
+            "endDate": "Dec 24",
+            "responsibilities": [
+                "Maintained and updated front-end applications for Optum Financial health provider portal provider sign-up landing pages",
+                "Maintained and updated front-end Optum Financial CRM application",
+                "Maintained and updated Booster Framework API which all Optum Financial applications interacted with",
+                "Performed routine Github code reviews, debugging of CI/CD issues, merging and integration of new code",
+                "Worked routinely with the product owners and product managers on implementation of new features",
+                "Wrote new and updated existing test cases for all applicable applications",
+                "Created new and updated existing Storyboard UI components"
+            ],
+            "technologies": [
+                "React",
+                "Redux State Management",
+                "Booster Framework",
+                "GraphQL",
+                "TypeScript",
+                "JavaScript",
+                "CSS",
+                "HTML",
+                "GitHub",
+                "Node.js",
+                "WCAG"
+            ],
+            "avatar": "optum.jpg",
+            "detaileDesc": "Ah, the digital frontier of healthcare finance! My time at Optum Financial was like being a digital architect in a world where every line of code could mean the difference between a smooth provider experience and a frustrated healthcare professional. Picture this: I'm sitting in my remote workspace, surrounded by the gentle hum of my development environment, crafting elegant solutions for healthcare providers who just want to get paid without losing their minds in the process. It's a bit like being a translator between the language of medicine and the language of technology, except instead of translating words, I'm translating user needs into functional applications that actually work when people need them most.\n\nThe Booster Framework became my trusty sidekick during this adventure - think of it as the Swiss Army knife of our application ecosystem, except instead of opening bottles and cutting string, it was handling API calls and managing data flow like a digital maestro conducting a symphony of information. Every day brought new challenges, from debugging mysterious CI/CD issues that seemed to have a mind of their own, to collaborating with product owners who spoke in the language of business requirements while I translated them into the poetry of code. It was like being a digital diplomat, bridging the gap between what users wanted and what technology could deliver, all while maintaining the delicate balance of a system that healthcare providers depended on for their livelihoods.\n\nThe most rewarding part was watching our applications evolve from functional tools into elegant solutions that actually made healthcare professionals' lives easier. Whether it was streamlining the provider sign-up process or enhancing the CRM system, each improvement felt like a small victory in the ongoing battle against digital friction. The test cases I wrote weren't just about catching bugs - they were about building trust, ensuring that every feature we deployed would work reliably when healthcare providers needed it most. And those Storyboard UI components? They were like the building blocks of a digital playground where user experience meets functionality, creating interfaces that didn't just work, but delighted users with their intuitive design and smooth interactions."
+        },
+        {
+            "jobTitle": "Lead Applications Developer",
+            "orgName": "Caterpillar Inc.",
+            "location": "Chicago, IL (remote)",
+            "startDate": "Oct 2022",
+            "endDate": "Mar 2023",
+            "responsibilities": [
+                "Provided technical advice, guidance and mentorship to junior developers and team members across multiple teams for multiple projects with respect to front-end development",
+                "Performed routine maintenance, bug fixes and mission-critical feature additions to the Caterpillar Foresight client management platform utilizing multiple front-end development technologies",
+                "Performed routine code reviews and feedback to promoted code",
+                "Routinely performed code and process optimization to minimize application latency and deployment time",
+                "Provided requirements gathering and JIRA story assistance to project managers and team leaders",
+                "Coordinated the conversion of pre-React 16.x class-based components to modern functional components"
+            ],
+            "technologies": [
+                "React",
+                "Redux State Management",
+                "Next.js",
+                "SiteCore",
+                "TypeScript",
+                "JavaScript",
+                "CSS",
+                "HTML",
+                "GitHub",
+                "Node.js",
+                "JSON",
+                "Tailwind CSS"
+            ],
+            "avatar": "cat.jpg",
+            "detaileDesc": "Imagine being the digital equivalent of a construction foreman, but instead of overseeing the building of skyscrapers, I was orchestrating the creation of digital infrastructure that would help Caterpillar's massive machinery empire run more smoothly. My role as Lead Applications Developer was like being handed the keys to a digital kingdom where every optimization could save millions in operational costs, and every bug fix could prevent a cascade of user frustration that would ripple through the entire organization. It was a bit like being a digital detective, constantly hunting down performance bottlenecks and user experience issues that were hiding in the shadows of our sprawling codebase.\n\nThe Caterpillar Foresight platform became my digital workshop, a complex ecosystem where I was both the architect and the craftsman, carefully balancing the needs of multiple teams while ensuring our applications didn't just work, but performed like well-oiled machines. The conversion from class-based to functional components was like orchestrating a digital migration - picture thousands of lines of code being gently coaxed into a more modern, more efficient form, like upgrading an entire city's infrastructure without disrupting the daily lives of its inhabitants. Every code review became a teaching moment, every optimization a small victory in the ongoing battle against digital entropy.\n\nThe mentorship aspect was particularly rewarding - watching junior developers grow from hesitant coders into confident problem-solvers was like watching apprentices become master craftsmen. Whether it was helping them understand the nuances of React hooks or guiding them through the complexities of state management, each interaction felt like passing on digital wisdom that would serve them throughout their careers. The JIRA story assistance was like being a digital translator, helping project managers speak the language of development while ensuring developers understood the business context behind every feature request."
+        },
+        {
+            "jobTitle": "Lead React Applications Developer",
+            "orgName": "Frontier Communications",
+            "location": "Dallas, TX (remote)",
+            "startDate": "Aug 2021",
+            "endDate": "Feb 2022",
+            "responsibilities": [
+                "Led development team in production of the Frontier Communications customer portal prototype in conversion from a Sitecore application to a headless CMS-based React application",
+                "Conducted code reviews and approvals for promoted code, enforced coding standards and code optimization",
+                "Worked closely with DevOps team to ensure promoted code was streamlined and optimized and test cases were successfully promoted through the CI/CD pipeline",
+                "Provided technical advice, guidance and mentorship to junior React developers and team members with respect to front-end development",
+                "Coordinated with Product Owners, Project Manager and Stakeholders on development timelines and task prioritization",
+                "Led and conducted Agile ceremonies including daily stand-up meetings, sprint reviews, sprint retrospectives, and sprint planning meetings",
+                "Wrote and optimized project stories and sub-stories, organizing tasks by team member and epics",
+                "Provided Figma designs and wireframes for new and/or optimized functionality with emphasis for usability on multiple devices"
+            ],
+            "technologies": [
+                "React",
+                "Redux State Management",
+                "Next.js",
+                "SiteCore",
+                "TypeScript",
+                "JavaScript",
+                "CSS",
+                "HTML",
+                "GitHub",
+                "Node.js",
+                "SQL Server",
+                "JSON"
+            ],
+            "avatar": "frontier.jpg",
+            "detaileDesc": "Ah, the great digital migration of Frontier Communications! Picture this: I'm leading a team of developers through the digital equivalent of moving an entire city from one continent to another, except instead of moving buildings and roads, we're migrating a massive customer portal from the old world of Sitecore to the brave new world of headless CMS and React. It was like being the captain of a digital ship navigating through uncharted waters, where every decision could mean the difference between smooth sailing and a mutiny of frustrated users. The transformation was nothing short of revolutionary - we were taking a monolithic application and breaking it into elegant, modular components that could dance across different devices like digital ballerinas.\n\nThe Agile ceremonies became my digital orchestra, where I conducted daily stand-ups like a maestro leading a symphony of developers, each with their own unique instruments and talents. Sprint planning was like choreographing a complex dance routine, where every story point and task had to be perfectly timed and coordinated. The sprint retrospectives were like therapy sessions for our codebase, where we'd gather around the digital campfire and discuss what went well, what went wrong, and how we could make our next sprint even more magical. It was a beautiful blend of technical expertise and human psychology, where understanding both code and people was equally important.\n\nThe Figma designs and wireframes I created were like architectural blueprints for digital experiences, each one carefully crafted to ensure that users could navigate our applications with the same ease they'd find in a well-designed physical space. The emphasis on multi-device usability was like designing a building that had to work perfectly whether you entered through the front door, the back door, or the window - every interaction had to feel natural and intuitive regardless of the device being used. Watching our customer portal evolve from a clunky, monolithic application into a sleek, responsive system was like watching a caterpillar transform into a butterfly, complete with all the beautiful complexity that such a transformation entails."
+        },
+        {
+            "jobTitle": "Lead Applications Architect",
+            "orgName": "Aperia Solutions, Inc",
+            "location": "Dallas, TX (hybrid)",
+            "startDate": "Oct 2019",
+            "endDate": "Dec 2020",
+            "responsibilities": [
+                "Provided technical advice, guidance and mentorship to junior React developers and team members with respect to front-end development",
+                "Coordinated up to 20 designers and developers across multiple local and offshore teams",
+                "Led design, architecture and development of the Dynamic Objects Framework to provide both the rapid development and onboarding of custom-built applications but also the dynamic modification of application content by the end-user admin",
+                "Coordinated with Product Owners, Project Manager and Stakeholders on development timelines and task prioritization",
+                "Designed and developed proof-of-concept prototypes for multiple application functionalities",
+                "Worked closely with designers, project managers and business analysts to clarify vague or incomplete requirements, translating to usable JIRA stories",
+                "Led management of Swagger API development and deployment based off provided business requirements",
+                "Worked closely with DevOps team to ensure promoted code was streamlined and optimized and test cases were successfully promoted through the CI/CD pipeline"
+            ],
+            "technologies": [
+                "React",
+                "Redux State Management",
+                "Swagger API",
+                "TypeScript",
+                "JavaScript",
+                "CSS",
+                "HTML",
+                "GitHub",
+                "Node.js",
+                "SQL Server",
+                "JSON"
+            ],
+            "avatar": "aperia.jpg",
+            "detaileDesc": "The Dynamic Objects Framework - now there's a story worth telling! Imagine being handed the task of creating a digital equivalent of LEGO blocks, but instead of building physical structures, these blocks could be assembled into any application imaginable, and then magically reconfigured by end users without touching a single line of code. That's exactly what we built at Aperia Solutions, and it was like being the architect of a digital universe where the laws of physics were written in React components and the inhabitants could reshape their world at will. The framework was like a digital Swiss Army knife that could transform into any tool the user needed, whether they were building a simple contact form or a complex enterprise application.\n\nCoordinating 20 designers and developers across multiple time zones was like conducting a digital orchestra where some musicians were playing in New York while others were performing in Mumbai, and somehow we all had to create beautiful music together. It was a masterclass in digital diplomacy, where understanding cultural differences, time zones, and communication styles was just as important as understanding React hooks and state management. The offshore teams brought their own unique perspectives and approaches to problem-solving, creating a beautiful melting pot of ideas that resulted in solutions more innovative than any single team could have produced alone.\n\nThe Swagger API development was like being the digital equivalent of a city planner, designing the infrastructure that would allow all our applications to communicate seamlessly with each other. Each API endpoint was like a well-designed intersection in a bustling digital city, where data could flow freely and efficiently without traffic jams or accidents. The proof-of-concept prototypes were like digital sketches, quick and dirty but full of potential, allowing us to test ideas before committing to full development. It was a playground for innovation, where we could experiment with new technologies and approaches without the pressure of production deadlines looming over our heads."
+        },
+        {
+            "jobTitle": "Contract Web Developer",
+            "orgName": "Self-Employed",
+            "location": "Los Angeles CA (remote)",
+            "startDate": "Nov 2017",
+            "endDate": "Oct 2019",
+            "responsibilities": [
+                "Conducted requirements gathering, design, development and deployment of multiple web-based applications",
+                "Coordinated with project clients on gathering requirements, creating and approving designs, project development timelines, device viewing specifications and other critical aspects of application development",
+                "Recommended and implemented best-practices solutions for clients based off requirements provided",
+                "Acquired and coordinated sub-contractors in support of design and development of multiple web applications",
+                "Conducted soup-to-nuts development of web-based applications including backend development, API development, database development administration, code deployment, user-experience optimization",
+                "Created and deployed pixel-perfect web applications utilizing multiple applications languages, development paradigms and design methodologies"
+            ],
+            "technologies": [
+                "React",
+                "Redux State Management",
+                "Next.js",
+                "SiteCore",
+                "TypeScript",
+                "JavaScript",
+                "CSS",
+                "HTML",
+                "GitHub",
+                "Node.js",
+                "SQL Server",
+                "JSON",
+                "MongoDB",
+                "PostGres DB",
+                "MySQLDB"
+            ],
+            "avatar": "scottlonis.jpg",
+            "detaileDesc": "Ah, the wild west of freelance development! My time as a self-employed web developer was like being a digital gunslinger, riding from town to town (or rather, from client to client) with nothing but my coding skills and a laptop to make my fortune. Each project was like a new adventure, where I'd arrive in a client's digital territory, assess the situation, and then craft solutions that would transform their digital presence from a tumbleweed-strewn ghost town into a bustling metropolis of user engagement. The requirements gathering phase was like being a digital detective, asking the right questions to uncover what clients really needed versus what they thought they wanted.\n\nThe coordination with sub-contractors was like being the conductor of a digital symphony where each musician was playing their own instrument in their own studio, and somehow I had to make sure they all came together to create beautiful music. It was a masterclass in project management, where I had to balance the creative visions of designers, the technical requirements of developers, and the business needs of clients, all while keeping everyone on schedule and within budget. The soup-to-nuts development approach meant I was like a digital renaissance person, handling everything from database design to front-end animations, from server configuration to user experience optimization.\n\nThe pixel-perfect applications were like digital works of art, where every element had to be positioned with the precision of a master craftsman and every interaction had to feel as natural as breathing. Whether I was working with React's component architecture, wrestling with the complexities of Redux state management, or diving deep into the world of databases (from the structured world of SQL Server to the flexible realm of MongoDB), each technology choice was like selecting the right tool for the right job. The deployment process was like launching a rocket - months of preparation, careful testing, and then that magical moment when the application went live and started serving real users in the wild."
+        },
+        {
+            "jobTitle": "Lead UI/UX Designer and Developer",
+            "orgName": "DotStudios",
+            "location": "Los Angeles CA (remote)",
+            "startDate": "Jan 2017",
+            "endDate": "Nov 2017",
+            "responsibilities": [
+                "Conducted requirements gathering, design, development and deployment of multiple web-based applications",
+                "Created and maintained wireframes, Photoshop designs and prototypes based off provided requirements",
+                "Enforced best-practices of front-end coding and designs to ensure application consistency across different devices, resolutions and platforms",
+                "Performed full-stack development utilizing a wide variety of programming languages including, but not limited to PHP, WordPress, JavaScript, MySQL, Laravel, and jQuery",
+                "Worked closely with requirements gatherers, project managers, product owners and stakeholders to ensure that applications performed as expected",
+                "Ensured that all aspects of the user experience were optimized for multiple browsers and devices"
+            ],
+            "technologies": [
+                "React",
+                "Redux State Management",
+                "Wordpress",
+                "JavaScript",
+                "CSS",
+                "HTML",
+                "GitHub",
+                "Node.js",
+                "JSON",
+                "MySQLDB"
+            ],
+            "avatar": "dotstudio.jpg",
+            "detaileDesc": "DotStudios was like being the digital equivalent of a master chef who also happened to be the restaurant owner, the waiter, and the dishwasher - I was responsible for every aspect of the digital dining experience, from the initial concept to the final presentation. The wireframes and Photoshop designs were like my recipe sketches, where I'd map out the user journey with the precision of a cartographer exploring uncharted digital territories. Each prototype was like a taste test, allowing clients to experience the flavor of their future application before we committed to the full development feast.\n\nThe best-practices enforcement was like being a digital quality control inspector, ensuring that every line of code and every design element met the high standards that would make our applications not just functional, but delightful to use. It was like maintaining a digital garden where consistency was the fertilizer that made everything grow beautifully, regardless of whether users were accessing our applications on a massive desktop monitor or a tiny smartphone screen. The cross-platform optimization was like being a digital translator, making sure our applications could speak the language of every device and browser they encountered.\n\nThe full-stack development approach meant I was like a digital renaissance person, comfortable in the front-end world of React and Redux, the back-end realm of PHP and Laravel, and the database domain of MySQL. Each technology was like a different instrument in my digital orchestra, and I had to know how to play them all to create the perfect symphony of user experience. The stakeholder collaboration was like being a digital diplomat, translating technical possibilities into business opportunities and user needs into technical solutions. It was a beautiful dance between creativity and functionality, where every decision had to serve both the aesthetic and the practical needs of our users."
+        },
+        {
+            "jobTitle": "Senior Software Engineer",
+            "orgName": "Interdealer Trading Solution",
+            "location": "Simi Valley, CA",
+            "startDate": "Mar 2015",
+            "endDate": "May 2016",
+            "responsibilities": [
+                "Led design, coordinated development and deployment of the Credit Station, a web-based a single-page application written in Native JavaScript and jQuery which provided a mechanism for bonds and securities traders to interact with and trade over 30,000 stocks, including those managed by NYSE, Deutsche Bank, Bonds Pro and others",
+                "Worked primarily on the front-end and secondarily on the application side of the software, designed and developed numerous UI/UX components for the Credit Station application",
+                "Worked closely with project managers and stakeholders to clarify vague or incomplete requirements, translating to usable JIRA stories",
+                "Routinely created new functionality and implemented bug fixes to existing functionality, employed problem- solving skills and experience",
+                "Provided technical advice, guidance and mentorship to junior developers and team members with respect to applications development"
+            ],
+            "technologies": [
+                "JavaScript",
+                "jQuery",
+                "CSS",
+                "HTML",
+                "GitHub",
+                "Node.js",
+                "SQL Server"
+            ],
+            "avatar": "interdealer.jpg",
+            "detaileDesc": "The Credit Station - now there's a digital beast worth taming! Picture this: I'm building a single-page application that has to handle the trading of over 30,000 stocks across multiple exchanges, where every millisecond of delay could mean millions of dollars in lost opportunities for traders. It was like being the architect of a digital Wall Street, where the stakes were high and the margin for error was razor-thin. The application was like a high-performance sports car that had to handle the complexity of a Formula 1 race while providing the user experience of a luxury sedan. Every UI component had to be optimized for speed and accuracy, because in the world of bond trading, a fraction of a second could be the difference between profit and loss.\n\nThe front-end development was like being a digital craftsman working with the most delicate of materials - every line of JavaScript had to be perfectly optimized, every jQuery interaction had to be lightning-fast, and every CSS animation had to be smooth as silk. The UI/UX components were like the instruments on a trading dashboard, each one carefully designed to provide traders with the information they needed at exactly the moment they needed it. It was a masterclass in performance optimization, where every kilobyte of code mattered and every network request had to be perfectly timed.\n\nThe mentorship aspect was particularly rewarding in this high-pressure environment - watching junior developers learn to navigate the complexities of financial software was like teaching someone to fly a plane while the plane was already in the air. The problem-solving skills required were like being a digital detective, where every bug could have cascading effects across the entire trading system. The JIRA story translation was like being a bridge between the world of finance and the world of technology, ensuring that every business requirement was properly understood and implemented. It was a beautiful blend of technical expertise and domain knowledge, where understanding both the code and the financial markets was equally important."
+        },
+        {
+            "jobTitle": "Contract Full-Stack Developer",
+            "orgName": "AGFA Graphics",
+            "location": "Thousand Oaks, CA",
+            "startDate": "Jan 2014",
+            "endDate": "Mar 2015",
+            "responsibilities": [
+                "As one of several full-stack developers working on the Agfa Graphics Eversify Project, designed, developed and deployed numerous enhancements to the Eversify CMS, a web-based application designed to allow newspaper clients deploy their content to mobile devices and to dynamic web-based locations",
+                "Provided technical advice, guidance and mentorship to junior developers and team members with respect to full-stack development",
+                "Worked with a team of 15 other designers and developers within an agile workflow",
+                "Routinely created new functionality and implemented bug fixes to existing functionality, employed problem- solving skills and experience",
+                "Worked closely with project managers and stakeholders to clarify vague or incomplete requirements, translating to usable JIRA stories",
+                "Created user stories based off provided requirements",
+                "Performed development using Python, Django, Native JavaScript, PostgreSQL, HTML, CSS"
+            ],
+            "technologies": [
+                "Python",
+                "Django",
+                "Postgres DB",
+                "JavaScript",
+                "CSS",
+                "HTML",
+                "TurtleSVN",
+                "Node.js",
+                "AJAX",
+                "DHTML"
+            ],
+            "avatar": "agfa.jpg",
+            "detaileDesc": "The Eversify Project was like being part of a digital revolution in the newspaper industry - imagine helping traditional print media transform into a dynamic, mobile-first digital experience that could reach readers anywhere, anytime. It was like being a digital alchemist, taking the static world of print newspapers and transforming it into something that could dance across screens of all sizes. The CMS we built was like a digital printing press that could instantly distribute content to mobile devices, tablets, and web browsers, all while maintaining the editorial integrity and design excellence that readers expected from their trusted news sources.\n\nWorking with a team of 15 developers in an agile workflow was like being part of a digital orchestra where everyone had their own instrument and their own part to play, but we all had to create beautiful music together. The Python and Django stack was like having a Swiss Army knife for web development - powerful, flexible, and capable of handling everything from simple content management to complex data processing. The PostgreSQL database was like our digital library, storing and organizing content with the precision of a master librarian who knew exactly where every piece of information belonged.\n\nThe mentorship aspect was particularly rewarding in this collaborative environment - watching junior developers learn the intricacies of full-stack development was like teaching someone to cook while running a busy restaurant kitchen. Every bug fix was like solving a puzzle, where the pieces were scattered across front-end JavaScript, back-end Python, and database queries. The user story creation was like being a digital storyteller, translating business requirements into technical narratives that developers could understand and implement. It was a beautiful blend of creativity and technical expertise, where every enhancement had to serve both the editorial needs of newspaper clients and the technical requirements of modern web development."
+        },
+        {
+            "jobTitle": "Contract UI/UX Developer and Designer",
+            "orgName": "LRN, Inc.",
+            "location": "Los Angeles, CA",
+            "startDate": "May 2013",
+            "endDate": "Nov 2013",
+            "responsibilities": [
+                "As lead designer and UX/UI developer for the Catalyst Course Platform, acted in the role of both lead designer and front-end developer",
+                "Utilized several disciplines including cross-browser development, custom object-oriented JavaScript, graphic design, wire framing, custom illustration, CSS, application engineering and development",
+                "Worked closely with project managers and stakeholders to clarify vague or incomplete requirements, translating to usable JIRA stories",
+                "Provided technical advice, guidance and mentorship to junior developers and team members with respect to front-end development and user experience",
+                "Provided multiple wireframes and Photoshop designs to communicate requirements for intended development",
+                "Developed methodology and implementation of dynamic styling configuration of the Catalyst application by the end-user administrator of the application"
+            ],
+            "technologies": [
+                "JavaScript",
+                "CSS",
+                "HTML",
+                "Node.js",
+                "PHP",
+                "Zend framework",
+                "MySQLDB"
+            ],
+            "avatar": "lrn.jpg",
+            "detaileDesc": "The Catalyst Course Platform was like being the architect of a digital university where every student could have a personalized learning experience tailored to their unique needs and preferences. As both lead designer and front-end developer, I was like a digital renaissance person, wearing multiple hats and switching between creative and technical mindsets with the ease of a chameleon changing colors. The platform was like a digital canvas where I could paint with pixels and code, creating interfaces that weren't just functional but beautiful, intuitive, and engaging. Every wireframe was like a blueprint for a digital classroom, every Photoshop design a window into the future of online education.\n\nThe cross-browser development was like being a digital diplomat, ensuring that our application could speak the language of every browser and device it encountered. The custom object-oriented JavaScript was like writing poetry in code, creating elegant solutions that could handle the complex interactions required for modern web applications. The dynamic styling configuration was like giving users the keys to their own digital kingdom, allowing them to customize their learning environment without needing to understand the underlying code. It was a beautiful blend of technical sophistication and user empowerment, where complexity was hidden behind simple, intuitive interfaces.\n\nThe mentorship aspect was particularly rewarding in this educational context - teaching junior developers about front-end development and user experience was like being a digital professor, sharing knowledge that would serve them throughout their careers. The wireframes and Photoshop designs were like visual stories, communicating complex requirements in a language that everyone could understand. The stakeholder collaboration was like being a bridge between the world of education and the world of technology, ensuring that every feature served the needs of both learners and administrators. It was a beautiful example of how technology could enhance education, making learning more accessible, engaging, and personalized than ever before."
+        },
+        {
+            "jobTitle": "Freelance Web Designer, Programmer & Developer",
+            "orgName": "TechGuru4Hire",
+            "location": "Los Angeles, CA",
+            "startDate": "Jan 2003",
+            "endDate": "May 2013",
+            "responsibilities": [
+                "Storeboard.com – Business social networking website – Front-end, middle-tier and backend coding, HTML4/5, CSS 2/3, ASP, JavaScript, Microsoft SQL Server, streaming media, AJAX, graphic design",
+                "Vonazon.com – Talent Agency Staffing and recruiting website – Wordpress CMS, theme creation, Graphic Design, AJAX, PHP, JavaScript, jQuery, HTML4/5, CSS 2/3, MySQL",
+                "Synergytvnetwork.com – Media / entertainment website – Wordpress CMS, theme creation, graphic design, AJAX, PHP, JavaScript, jQuery, HTML4/5, CSS 2/3, jQuery UI, Responsive Design, CSS Media Queries, streaming media, MySQL",
+                "FilmFestivalFlix.com – Media / entertainment website – Wordpress CMS, theme creation, Graphic Design, AJAX, PHP, JavaScript, jQuery, HTML4/5, CSS 2/3, jQuery UI, Responsive Design, CSS Media Queries, streaming media, e-commerce, MySQL"
+            ],
+            "technologies": [
+                "Wordpress",
+                "PHP",
+                "JavaScript",
+                "jQuery",
+                "HTML4/5",
+                "CSS 2/3",
+                "MySQL",
+                "ASP",
+                "Microsoft SQL Server",
+                "AJAX",
+                "jQuery UI",
+                "Responsive Design",
+                "CSS Media Queries",
+                "Streaming Media",
+                "E-commerce",
+                "Graphic Design"
+            ],
+            "avatar": "techguru4hire.jpg",
+            "detaileDesc": "Ah, the early days of the digital frontier! My decade-long journey as a freelance web designer and developer was like being a digital pioneer, exploring uncharted territories of the internet and building digital settlements wherever clients needed them. Each project was like a new adventure, where I'd arrive with nothing but my coding skills and a vision, and leave behind a fully functional digital ecosystem that could serve users from anywhere in the world. Storeboard.com was like building a digital town square where business professionals could gather, network, and share ideas - a social networking platform before social networking was cool, complete with streaming media capabilities that were cutting-edge for the time.\n\nThe WordPress CMS became my trusty steed during this period, allowing me to create beautiful, functional websites that clients could manage themselves without needing to understand the complexities of code. Vonazon.com was like creating a digital talent agency where recruiters and job seekers could find each other in a beautifully designed environment. Synergytvnetwork.com was like building a digital television network, complete with streaming media capabilities and responsive design that worked across all devices. FilmFestivalFlix.com was like creating a digital film festival that could run year-round, with e-commerce capabilities that allowed users to purchase tickets and merchandise directly from the platform.\n\nThe technology stack was like a digital Swiss Army knife, with each tool serving a specific purpose in the creation of these digital experiences. From the structured world of ASP and Microsoft SQL Server to the flexible realm of PHP and MySQL, from the static world of HTML4 to the dynamic possibilities of CSS3 and jQuery, every technology choice was like selecting the right tool for the right job. The responsive design and CSS media queries were like creating digital chameleons that could adapt to any screen size, ensuring that users had a perfect experience whether they were accessing our sites from a desktop computer or a mobile phone. It was a beautiful period of digital innovation, where every project pushed the boundaries of what was possible on the web."
+        }
+    ]
+}

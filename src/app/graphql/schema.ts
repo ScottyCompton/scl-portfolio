@@ -60,6 +60,18 @@ export const typeDefs = gql`
         to: String
     }
 
+    type ProfessionalHighlight {
+        jobTitle: String!
+        orgName: String!
+        location: String!
+        startDate: String!
+        endDate: String!
+        responsibilities: [String!]!
+        technologies: [String!]!
+        avatar: String!
+        detaileDesc: String!
+    }
+
     type Query {
         # Portfolio queries
         portfolioItems(categoryId: ID): [PortfolioItem!]!
@@ -78,5 +90,9 @@ export const typeDefs = gql`
         # Tech spec queries
         techSpecs: [TechSpec!]!
         techSpec(id: ID!): TechSpec
+
+        # Professional highlights queries
+        professionalHighlights: [ProfessionalHighlight!]!
+        professionalHighlight(jobTitle: String!): ProfessionalHighlight
     }
 `

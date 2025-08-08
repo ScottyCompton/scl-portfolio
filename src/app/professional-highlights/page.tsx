@@ -1,7 +1,11 @@
+import ProfessionalHighlightsList from '@/components/professional-highlights/ProfessionalHighlightsList'
+
 const ProfessionalHighlights = () => {
     return (
-        <div>
-            <h1>Professional Highlights</h1>
+        <div className="min-h-screen">
+            <main className="pt-16">
+                <ProfessionalHighlightsList />
+            </main>
         </div>
     )
 }

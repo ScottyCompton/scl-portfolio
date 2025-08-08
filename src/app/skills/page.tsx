@@ -16,7 +16,7 @@ const SkillsPage = () => {
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
                             Skills & Experience
                         </h1>
-                        <p className="text-sm sm:text-base leading-relaxed prose prose-sm sm:prose-base lg:prose-lg max-w-none">
+                        <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
                             A comprehensive overview of my technical skills and
                             years of experience across various technologies.
                         </p>

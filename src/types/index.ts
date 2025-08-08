@@ -52,6 +52,18 @@ export interface TechSpec {
     title: string
 }
 
+export interface ProfessionalHighlight {
+    jobTitle: string
+    orgName: string
+    location: string
+    startDate: string
+    endDate: string
+    responsibilities: string[]
+    technologies: string[]
+    avatar: string
+    detaileDesc: string
+}
+
 export interface SliderArrowProps {
     onClick?(e: React.MouseEvent<HTMLDivElement, MouseEvent>): () => void
     type?: string

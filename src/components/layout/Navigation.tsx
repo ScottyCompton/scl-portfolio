@@ -10,6 +10,7 @@ import ThemeToggle from '@/components/ThemeToggle'
 export function Navigation() {
     const [isOpen, setIsOpen] = useState(false)
     const { setIsMobile } = useUIStore()
+    const [isContactOpen, setIsContactOpen] = useState(false)
 
     // Mobile detection
     useEffect(() => {
@@ -26,8 +27,17 @@ export function Navigation() {
     const navItems = [
         { href: '/skills', label: 'Skills & Experience' },
         { href: '/professional-highlights', label: 'Professional Highlights' },
-        { href: '/contact', label: 'Contact Me' },
+        {
+            href: '#contact',
+            label: 'Contact Me',
+            onClick: () => setOpenContactModal(),
+        },
     ]
+
+    const setOpenContactModal = () => {
+        alert('Contact Me')
+        setIsContactOpen(true)
+    }
 
     return (
         <nav
@@ -49,15 +59,26 @@ export function Navigation() {
                     {/* Desktop Navigation */}
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-4">
-                            {navItems.map((item) => (
-                                <a
-                                    key={item.href}
-                                    href={item.href}
-                                    className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors min-h-touch"
-                                >
-                                    {item.label}
-                                </a>
-                            ))}
+                            {navItems.map((item) =>
+                                item.onClick ? (
+                                    <a
+                                        key={item.href}
+                                        href={item.href}
+                                        className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors min-h-touch"
+                                        onClick={item.onClick}
+                                    >
+                                        {item.label}
+                                    </a>
+                                ) : (
+                                    <a
+                                        key={item.href}
+                                        href={item.href}
+                                        className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors min-h-touch"
+                                    >
+                                        {item.label}
+                                    </a>
+                                )
+                            )}
                             <ThemeToggle />
                         </div>
                     </div>
@@ -68,7 +89,7 @@ export function Navigation() {
                         <Button
                             variant="ghost"
                             size="sm"
-                            className="min-h-touch p-2"
+                            className="min-h-touch p-2 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
                             onClick={() => setIsOpen(!isOpen)}
                             aria-label="Toggle navigation menu"
                         >
@@ -85,16 +106,27 @@ export function Navigation() {
                 {isOpen && (
                     <div className="md:hidden">
                         <div className="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
-                            {navItems.map((item) => (
-                                <a
-                                    key={item.href}
-                                    href={item.href}
-                                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors min-h-touch"
-                                    onClick={() => setIsOpen(false)}
-                                >
-                                    {item.label}
-                                </a>
-                            ))}
+                            {navItems.map((item) =>
+                                item.onClick ? (
+                                    <a
+                                        key={item.href}
+                                        href={item.href}
+                                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors min-h-touch"
+                                        onClick={item.onClick}
+                                    >
+                                        {item.label}
+                                    </a>
+                                ) : (
+                                    <a
+                                        key={item.href}
+                                        href={item.href}
+                                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors min-h-touch"
+                                        onClick={item.onClick}
+                                    >
+                                        {item.label}
+                                    </a>
+                                )
+                            )}
                         </div>
                     </div>
                 )}

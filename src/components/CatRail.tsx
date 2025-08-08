@@ -2,16 +2,6 @@ import Slider from 'react-slick'
 import Image from 'next/image'
 import { PortfolioItem } from '@/types'
 import SliderArrow from '@/components/SliderArrow'
-
-// CatRail.tsx
-// takes a category id, retrieves the portfolio items for that category
-// displays a list of portfolio items in a horizontal scrollable area
-// each portfolio item has a title, image and link to the portfolio item (project page)
-// the portfolio items are displayed in a grid layout
-// the grid layout is responsive and adapts to the screen size
-// the grid layout is responsive and adapts to the screen size
-// component uses react-slick for the carousel
-
 import { GET_PORTFOLIO_ITEMS_QUERY } from '@/app/graphql/queries'
 import { useQuery } from '@apollo/client'
 
@@ -21,10 +11,6 @@ interface CatRailProps {
 }
 
 const CatRail = ({ categoryId, openModal }: CatRailProps) => {
-    // const [selectedProject, setSelectedProject] =
-    //     useState<PortfolioItem | null>(null)
-    // const [isModalOpen, setIsModalOpen] = useState(false)
-
     const { data, loading, error } = useQuery(GET_PORTFOLIO_ITEMS_QUERY, {
         variables: {
             categoryId: categoryId,
@@ -36,15 +22,8 @@ const CatRail = ({ categoryId, openModal }: CatRailProps) => {
     const { portfolioItems } = data
 
     const handleProjectClick = (project: PortfolioItem) => {
-        // setSelectedProject(project)
-        // setIsModalOpen(true)
         openModal(project)
     }
-
-    // const closeModal = () => {
-    //     setIsModalOpen(false)
-    //     setSelectedProject(null)
-    // }
 
     const settings = {
         dots: false,

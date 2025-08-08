@@ -4,6 +4,7 @@ import {
     techSpecData,
     contentSettingsData,
     contactItemsData,
+    professionalHighlightsData,
 } from '@/app/api/data'
 
 export const resolvers = {
@@ -54,6 +55,20 @@ export const resolvers = {
         techSpec: (_: unknown, { id }: { id: string }) => {
             return techSpecData.techSpecs.find((tech) => tech._id === id)
         },
+
+        // Professional highlights queries
+        professionalHighlights: () => {
+            return professionalHighlightsData.highlights
+        },
+
+        professionalHighlight: (
+            _: unknown,
+            { jobTitle }: { jobTitle: string }
+        ) => {
+            return professionalHighlightsData.highlights.find(
+                (highlight) => highlight.jobTitle === jobTitle
+            )
+        },
     },
 
     // PortfolioItem type resolvers
@@ -78,16 +93,11 @@ export const resolvers = {
         },
 
         techSpecs: (parent: { techSpecs?: string[] }) => {
+            // Return the raw string labels from portfolio data
             if (!parent.techSpecs || !Array.isArray(parent.techSpecs)) {
                 return []
             }
             return parent.techSpecs
-                .map((techSpecId: string) => {
-                    return techSpecData.techSpecs.find(
-                        (tech) => tech._id === techSpecId
-                    )
-                })
-                .filter(Boolean)
         },
     },
 }

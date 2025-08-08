@@ -80,7 +80,7 @@ const PortCats = () => {
                                         {category.category}
                                     </h3>
                                     <Card
-                                        className="space-y-4 bg-gray-100 dark:bg-gray-800 border-0 border-white shadow-2xl"
+                                        className="space-y-4l dark:bg-blue-900/20 rounded-lg"
                                         style={
                                             {
                                                 '--card-border-width': '0px',
