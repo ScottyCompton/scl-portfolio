@@ -2,14 +2,11 @@
 
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { Navigation } from '@/components/layout/Navigation'
 import { Home, ArrowLeft, Search } from 'lucide-react'
 
 export default function NotFound() {
     return (
         <div className="min-h-screen bg-gray-50">
-            <Navigation />
-
             <main className="pt-16">
                 <div className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
                     <div className="max-w-4xl mx-auto text-center">

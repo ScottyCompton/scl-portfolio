@@ -7,6 +7,7 @@ import { ApolloProviderWrapper } from '@/components/providers/apollo-provider'
 import { ThemeProvider } from '@/contexts/ThemeContext'
 import ThemeWrapper from '@/components/ThemeWrapper'
 import { ErrorBoundary } from '@/components/ui/error-boundary'
+import { Navigation } from '@/components/layout/Navigation'
 
 const geistSans = Geist({
     variable: '--font-geist-sans',
@@ -81,7 +82,10 @@ export default function RootLayout({
                     <ThemeProvider>
                         <ThemeWrapper>
                             <ApolloProviderWrapper>
-                                <QueryProvider>{children}</QueryProvider>
+                                <QueryProvider>
+                                    <Navigation />
+                                    {children}
+                                </QueryProvider>
                             </ApolloProviderWrapper>
                         </ThemeWrapper>
                     </ThemeProvider>

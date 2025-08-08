@@ -60,6 +60,7 @@ const GET_CONTENT_SETTINGS_QUERY = gql`
             resumeUrl
             siteTitle
             linkedinUsername
+            githubId
         }
     }
 `

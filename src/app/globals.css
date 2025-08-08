@@ -43,3 +43,15 @@ body {
     color: #374151;
     border: 1px solid #d1d5db;
 }
+
+:root {
+    --text-primary: #111827;
+} /* gray-900 */
+.dark {
+    --text-primary: #e5e7eb;
+} /* gray-200 */
+@layer utilities {
+    .text-primary {
+        color: var(--text-primary);
+    }
+}

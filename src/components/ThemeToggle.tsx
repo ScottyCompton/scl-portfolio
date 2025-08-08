@@ -19,7 +19,11 @@ const ThemeToggle = () => {
             className="p-2 rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
             aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
         >
-            {theme === 'light' ? <BsMoon size={16} /> : <BsSun size={16} />}
+            {theme === 'light' ? (
+                <BsMoon size={16} className="cursor-pointer" />
+            ) : (
+                <BsSun size={16} className="cursor-pointer" />
+            )}
         </Button>
     )
 }

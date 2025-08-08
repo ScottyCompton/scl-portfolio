@@ -109,7 +109,7 @@ const CatRail = ({ categoryId, openModal }: CatRailProps) => {
 
     return (
         <>
-            <div className="slider-container w-full relative">
+            <div className="slider-container w-full relative mt-3">
                 <Slider {...settings}>
                     {portfolioItems &&
                         portfolioItems.map((item: PortfolioItem) => (
@@ -129,7 +129,7 @@ const CatRail = ({ categoryId, openModal }: CatRailProps) => {
                                         className="mx-auto rounded-full object-cover w-48 h-48 border-2 border-gray-200 dark:border-transparent transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:brightness-75 pointer-events-none"
                                     />
                                 </div>
-                                <div className="text-center text-sm sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed mt-2">
+                                <div className="text-center text-sm sm:text-sm  leading-relaxed mt-2 text-primary">
                                     {item.projectTitle}
                                 </div>
                             </div>

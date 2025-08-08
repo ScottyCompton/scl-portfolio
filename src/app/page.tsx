@@ -1,6 +1,5 @@
 'use client'
 
-import { Navigation } from '@/components/layout/Navigation'
 // import { HeroSlider } from '@/components/home/HeroSlider'
 // import { ProjectGrid } from '@/components/projects/ProjectGrid'
 import AboutSection from '@/components/about/AboutSection'
@@ -12,9 +11,6 @@ import 'slick-carousel/slick/slick-theme.css'
 export default function Home() {
     return (
         <div className="relative">
-            {/* Navigation */}
-            <Navigation />
-
             {/* Hero Slider */}
             {/* <HeroSlider images={mockSliderImages} /> */}
 

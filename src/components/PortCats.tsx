@@ -16,7 +16,6 @@ const PortCats = () => {
     const [selectedProject, setSelectedProject] =
         useState<PortfolioItem | null>(null)
     const [isModalOpen, setIsModalOpen] = useState(false)
-
     const openModal = (project: PortfolioItem) => {
         const modalContainer = document.getElementById(
             'project-modal-container'
@@ -80,7 +79,14 @@ const PortCats = () => {
                                     <h3 className="text-4xl font-light uppercase text-gray-400">
                                         {category.category}
                                     </h3>
-                                    <Card className="space-y-4">
+                                    <Card
+                                        className="space-y-4 bg-gray-100 dark:bg-gray-800 border-0 border-white shadow-2xl"
+                                        style={
+                                            {
+                                                '--card-border-width': '0px',
+                                            } as React.CSSProperties
+                                        }
+                                    >
                                         <CatRail
                                             categoryId={category._id}
                                             openModal={openModal}

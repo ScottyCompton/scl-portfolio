@@ -1,4 +1,3 @@
-import { Navigation } from '@/components/layout/Navigation'
 // import { AboutSection } from '@/components/about/AboutSection'
 import { ContactForm } from '@/components/contact/ContactForm'
 // import { mockAbout } from '@/data/mock-data'
@@ -6,8 +5,6 @@ import { ContactForm } from '@/components/contact/ContactForm'
 export default function AboutPage() {
     return (
         <div className="min-h-screen bg-gray-50">
-            <Navigation />
-
             <main className="pt-16">
                 {/* Hero Section */}
                 <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">

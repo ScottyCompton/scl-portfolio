@@ -24,10 +24,9 @@ export function Navigation() {
     }, [setIsMobile])
 
     const navItems = [
-        { href: '/', label: 'Home' },
         { href: '/skills', label: 'Skills & Experience' },
-        { href: '/projects', label: 'Projects' },
-        { href: '/contact', label: 'Contact' },
+        { href: '/professional-highlights', label: 'Professional Highlights' },
+        { href: '/contact', label: 'Contact Me' },
     ]
 
     return (
@@ -36,11 +35,11 @@ export function Navigation() {
             role="navigation"
             aria-label="Main navigation"
         >
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
                     <div className="flex-shrink-0">
-                        <h1 className="text-xl font-bold text-gray-900 dark:text-white">
+                        <h1 className="px-3 py-2 rounded-md text-xl font-bold text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors min-h-touch">
                             <Link href="/" aria-label="Go to homepage">
                                 Professional Portfolio
                             </Link>

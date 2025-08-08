@@ -1,6 +1,5 @@
 'use client'
 
-import { Navigation } from '@/components/layout/Navigation'
 import SkillsBarChart from '@/components/SkillsBarChart'
 import { useQuery } from '@apollo/client'
 import { GET_TECH_SPECS_QUERY } from '@/app/graphql/queries'
@@ -10,8 +9,6 @@ const SkillsPage = () => {
 
     return (
         <div className="min-h-screen">
-            <Navigation />
-
             <main className="pt-16">
                 {/* Header */}
                 <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
@@ -19,7 +16,7 @@ const SkillsPage = () => {
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
                             Skills & Experience
                         </h1>
-                        <p className="text-sm sm:text-sm leading-relaxed">
+                        <p className="text-sm sm:text-base leading-relaxed prose prose-sm sm:prose-base lg:prose-lg max-w-none">
                             A comprehensive overview of my technical skills and
                             years of experience across various technologies.
                         </p>
