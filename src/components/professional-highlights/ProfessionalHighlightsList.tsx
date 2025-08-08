@@ -284,14 +284,6 @@ const ProfessionalHighlightsList = () => {
                         </div>
                     </div>
                 )}
-
-                {/* Footer */}
-                <div className="text-center mt-16 pt-8 border-t border-gray-200 dark:border-gray-700">
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                        Professional journey spanning {highlights.length} roles
-                        across various industries and technologies.
-                    </p>
-                </div>
             </div>
         </div>
     )

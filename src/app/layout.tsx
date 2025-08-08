@@ -8,6 +8,7 @@ import { ThemeProvider } from '@/contexts/ThemeContext'
 import ThemeWrapper from '@/components/ThemeWrapper'
 import { ErrorBoundary } from '@/components/ui/error-boundary'
 import { Navigation } from '@/components/layout/Navigation'
+import SiteFooter from '../components/layout/SiteFooter'
 
 const geistSans = Geist({
     variable: '--font-geist-sans',
@@ -85,6 +86,7 @@ export default function RootLayout({
                                 <QueryProvider>
                                     <Navigation />
                                     {children}
+                                    <SiteFooter />
                                 </QueryProvider>
                             </ApolloProviderWrapper>
                         </ThemeWrapper>

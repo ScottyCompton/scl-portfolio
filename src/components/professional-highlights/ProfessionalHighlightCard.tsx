@@ -11,7 +11,6 @@ interface ProfessionalHighlightCardProps {
 
 const ProfessionalHighlightCard = ({
     highlight,
-    index,
 }: ProfessionalHighlightCardProps) => {
     const [isExpanded, setIsExpanded] = useState(false)
 

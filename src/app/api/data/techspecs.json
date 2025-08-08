@@ -145,6 +145,41 @@
             "_id": "60c4d9f78d9ea066f4a762eb",
             "from": "2010",
             "to": "2015"
+        },
+        {
+            "title": "GraphQL",
+            "_id": "60c4d9f78d9ea066f4a762ec",
+            "from": "2022"
+        },
+        {
+            "title": "Cursor.ai",
+            "_id": "60c4d9f78d9ea066f4a762ed",
+            "from": "2024"
+        },
+        {
+            "title": "ChatGPT",
+            "_id": "60c4d9f78d9ea066f4a762ee",
+            "from": "2024"
+        },
+        {
+            "title": "GitHub",
+            "_id": "60c4d9f78d9ea066f4a762ef",
+            "from": "2015"
+        },
+        {
+            "title": "Google Copilot",
+            "_id": "60c4d9f78d9ea066f4a762f0",
+            "from": "2024"
+        },
+        {
+            "title": "Artificial Intelligence",
+            "_id": "60c4d9f78d9ea066f4a762f1",
+            "from": "2024"
+        },
+        {
+            "title": "OpenAI",
+            "_id": "60c4d9f78d9ea066f4a762f2",
+            "from": "2024"
         }
     ]
 }

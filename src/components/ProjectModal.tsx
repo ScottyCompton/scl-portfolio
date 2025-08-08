@@ -75,9 +75,9 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                 <Dialog.Portal>
                     <Dialog.Overlay className="fixed inset-0 bg-black/60 backdrop-blur-sm data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0" />
                     <Dialog.Content
-                        className={`fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${modalBgClass} w-[92vw] max-w-5xl max-h-[85vh] overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-700 shadow-2xl ring-1 ring-black/5 dark:ring-white/5 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95`}
+                        className={`fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${modalBgClass} w-[92vw] max-w-5xl max-h-[90vh] overflow-y-auto md:overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-700 shadow-2xl ring-1 ring-black/5 dark:ring-white/5 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95`}
                     >
-                        <div className="flex h-full flex-col">
+                        <div className="flex h-full min-h-0 flex-col">
                             {/* Header */}
                             <div className="flex items-start justify-between border-b border-gray-200 dark:border-gray-800 px-5 py-4">
                                 <Dialog.Title className="text-xl md:text-2xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
@@ -115,9 +115,9 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
             <Dialog.Portal>
                 <Dialog.Overlay className="fixed inset-0 bg-black/60 backdrop-blur-sm data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0" />
                 <Dialog.Content
-                    className={`fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${modalBgClass} w-[92vw] max-w-5xl max-h-[85vh] overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-700 shadow-2xl ring-1 ring-black/5 dark:ring-white/5 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95`}
+                    className={`fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${modalBgClass} w-[92vw] max-w-5xl max-h-[90vh] overflow-y-auto md:overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-700 shadow-2xl ring-1 ring-black/5 dark:ring-white/5 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95`}
                 >
-                    <div className="flex h-full flex-col">
+                    <div className="flex h-full min-h-0 flex-col">
                         {/* Header */}
                         <div className="flex items-start justify-between border-b border-gray-200 dark:border-gray-800 px-5 py-4">
                             <Dialog.Title className="text-xl md:text-2xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
