@@ -12,6 +12,7 @@ export const typeDefs = gql`
         auxImgAspectRatio: Float
         projectUrl: String
         repoUrl: String
+        deadProject: Boolean
         published: Boolean!
         categories: [Category!]!
     }
