@@ -257,7 +257,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                                 {/* Details */}
                                 <div className="flex flex-col gap-4">
                                     <div>
-                                        <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                                        <p className="text-gray-700 dark:text-gray-300 leading-relaxed italic">
                                             {data?.portfolioItem.shortDesc}
                                         </p>
                                     </div>
@@ -284,9 +284,16 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                                     )}
 
                                     {data?.portfolioItem.longDesc && (
-                                        <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                                            {data.portfolioItem.longDesc}
-                                        </p>
+                                        <div
+                                            className="text-gray-600 dark:text-gray-400 leading-relaxed"
+                                            dangerouslySetInnerHTML={{
+                                                __html: data.portfolioItem
+                                                    .longDesc,
+                                            }}
+                                        />
+                                        // <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                                        //     {data.portfolioItem.longDesc}
+                                        // </p>
                                     )}
 
                                     {(data?.portfolioItem.projectUrl ||
@@ -317,8 +324,8 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                                                     <Button
                                                         asChild
                                                         variant="soft"
-                                                        color="blue"
                                                         radius="large"
+                                                        className="border-none"
                                                     >
                                                         <a
                                                             href={
@@ -328,7 +335,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                                                             }
                                                             target="_blank"
                                                             rel="noreferrer"
-                                                            className="inline-flex items-center gap-2 cursor-pointer"
+                                                            className="inline-flex items-center gap-2 cursor-pointer border-none"
                                                         >
                                                             <div className="flex items-center gap-2 cursor-pointer px-6 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs font-medium rounded-full border border-blue-200 dark:border-blue-700 ">
                                                                 <ExternalLink className="h-4 w-4" />
@@ -341,8 +348,8 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                                                 <Button
                                                     asChild
                                                     variant="outline"
-                                                    color="indigo"
                                                     radius="large"
+                                                    className="border-none"
                                                 >
                                                     <a
                                                         href={
@@ -351,10 +358,12 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                                                         }
                                                         target="_blank"
                                                         rel="noreferrer"
-                                                        className="inline-flex items-center gap-2"
+                                                        className="inline-flex items-center gap-2 border-none"
                                                     >
-                                                        <Github className="h-4 w-4" />
-                                                        View Code
+                                                        <div className="flex items-center gap-2 cursor-pointer px-6 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs font-medium rounded-full border border-blue-200 dark:border-blue-700 ">
+                                                            <Github className="h-4 w-4" />
+                                                            View Code
+                                                        </div>
                                                     </a>
                                                 </Button>
                                             )}
