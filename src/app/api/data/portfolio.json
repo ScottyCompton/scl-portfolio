@@ -4,7 +4,7 @@
             "published": true,
             "_id": "60c4da088d9ea04af4a76332",
             "repoUrl": "https://github.com/ScottyCompton/scl-portfolio",
-            "longDesc": "I have to admit, it feels a little meta to be adding my own portfolio website as an entry in my own portfolio website.  I feel like somewhere, Gimli son of Gloin is saying, \"That still only counts as one!\" Be that as it may, I think it's still worth pointing out that this is a portfolio website built using Cursor.ai.  In the last several monts of using this IDE, it's increased my productivity exponentially, so it's worth bragging about.  Where I used to spend hours or days on generating test cases and debugging code, I now spend only minutes, as long as I adhere to good prompt engineerering.  One thing for sure, learning to use AI is a bit like \"How to train your Dragon\" in practice, but now that I know how to use it, I'd now put my productivity, technical accuracy and overall capabilities above anyone doing this by hand. <br /><br /><b class=\"text-primary\">Fun fact</b> - it took me less than a week to build this site from concept to completion, including all the test runners overall coding. Previously, it would have taken me at least a couple weeks to do that much if I was really working.  So... that should tell you something about how effective Cursor.ai really is.</b>",
+            "longDesc": "I have to admit, it feels a little meta to be adding my own portfolio website as an entry in my own portfolio website.  I feel like somewhere, Gimli son of Gloin is saying, \"That still only counts as one!\" Be that as it may, I think it's still worth pointing out that this is a portfolio website built using Cursor.ai.  In the last several months of using this IDE, it's increased my productivity exponentially, so it's worth bragging about.  Where I used to spend hours or days on generating test cases and debugging code, I now spend only minutes, as long as I adhere to good prompt engineerering.  One thing for sure, learning to use AI is a bit like \"How to train your Dragon\" in practice, but now that I know how to use it, I'd now put my productivity, technical accuracy and overall capabilities above anyone doing this by hand. <br /><br /><b class=\"text-primary\">Fun fact</b> - it took me less than a week to build this site from concept to completion, including all the test runners overall coding. Previously, it would have taken me at least a couple weeks to do that much if I was really working.  So... that should tell you something about how effective Cursor.ai really is.</b>",
             "projectTitle": "Professional Portfolio Website",
             "projectUrl": "",
             "shortDesc": "My super-fancy portfolio website built using Cursor.ai with Next.js, Radix.ui, Tailwind CSS and TypeScript",
@@ -15,7 +15,6 @@
                 "Tailwind CSS",
                 "HTML5",
                 "CSS3",
-                "Bootstrap",
                 "TypeScript",
                 "Cursor.ai",
                 "Adobe Photoshop"
@@ -30,7 +29,48 @@
             "updatedAt": "2021-06-12T16:00:09.095Z",
             "__v": 0
         },
-
+        {
+            "published": true,
+            "_id": "60c4da075d9ea04af4a76332",
+            "repoUrl": "https://github.com/ScottyCompton/issue-tracker",
+            "longDesc": "Do you have issues?  I certainly do.  So just as an exercise, I built this basic issue tracker app with Next.js, Radix.ui, Tailwind CSS and TypeScript. Nothing fancy, just a means for me to cut my teeth on some Next.js and AI-assisted development.  I'll be the first to admit, hadn't coded in awhile so I was a bit rusty, especially with Next.js so this was a good warm-up. <b class=\"text-primary\">Fun fact</b> - This was my first real foray into using Cursor.ai to build an app, and I was pretty astonished at what it could do.  Yes, it has limitations, but having learned how to code this way, I'll never go back!",
+            "projectTitle": "Issue Tracker",
+            "projectUrl": "",
+            "shortDesc": "Simple issue tracker app built with Next.js, Radix.ui, Tailwind CSS and TypeScript",
+            "auxImgAspectRatio": 64.3,
+            "techSpecs": [
+                "Next.js",
+                "Radix.ui",
+                "Tailwind CSS",
+                "HTML5",
+                "CSS3",
+                "TypeScript",
+                "Cursor.ai",
+                "Adobe Photoshop"
+            ],
+            "auxImgs": [
+                {
+                    "_id": "60c4da075d9ea04af4a76333",
+                    "auxImgUrl": "https://lh3.googleusercontent.com/d/13v6d5tNAHaTwDAUqPbVLkbKLBKgR4Isr"
+                },
+                {
+                    "_id": "60c4da075d9ea04af4a76334",
+                    "auxImgUrl": "https://lh3.googleusercontent.com/d/1iDnPnqyoTqIDSSr-WuWtwFUJSCmeNjLl"
+                },
+                {
+                    "_id": "60c4da075d9ea04af4a76335",
+                    "auxImgUrl": "https://lh3.googleusercontent.com/d/1sd9PTZY04ULMUEp60GMX7kRzrpW0IaL0"
+                }
+            ],
+            "previewImgUrl": "https://lh3.googleusercontent.com/d/1OtzuAmp8mBSOD94wg1Pe4O8hhv3611Mt",
+            "categories": [
+                "60c4d9f78d9ea066f4a762d1",
+                "60c4d9f78d9ea066f4a762cf"
+            ],
+            "createdAt": "2021-06-12T16:00:08.584Z",
+            "updatedAt": "2021-06-12T16:00:09.095Z",
+            "__v": 0
+        },
         {
             "published": true,
             "_id": "60c4d9f78d9ea066f4a762d5",
