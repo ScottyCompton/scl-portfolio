@@ -1130,9 +1130,10 @@
         {
             "published": true,
             "_id": "60c4da188d9ea066f4a7637e",
-            "repoUrl": "",
+            "repoUrl": "https://github.com/ScottyCompton/IndecisionApp",
             "longDesc": "As part of my React/Redux course, built this simple doo-hickey app that helped me learn the fundamentals of React.  Basically it's a cross between the typical \"to-do\" list type of app and Rock/Paper/Scissors.  I guarantee about 40 seconds of life-wasting entertainment from this one. Cute, but totally useless.",
             "projectTitle": "Indecision App",
+            "deadProject": true,
             "projectUrl": "https://scl-indecision.herokuapp.com/",
             "shortDesc": "Simple starter React fundamentals app",
             "auxImgAspectRatio": 64.3,
@@ -1160,9 +1161,10 @@
         {
             "published": true,
             "_id": "60c4da198d9ea066f4a76383",
-            "repoUrl": "",
+            "repoUrl": "https://github.com/ScottyCompton/expensify-app",
             "longDesc": "This is the second React app that I built as part of my React/Redux course.  This one had alot more meat on it than the first one, and I learned the fundamentals of building a React/Redux app from soup to nuts.  It is the foundation upon which my WebFolio app is currently built, although somewhat less sophisticated than that one is obviously.  Free to play with if you have a Google account to login with.",
             "projectTitle": "Expensify App",
+            "deadProject": true,
             "projectUrl": "https://scl-expensify.herokuapp.com",
             "shortDesc": "Rudimentary React/Redux expense tracking app",
             "auxImgAspectRatio": 64.3,
