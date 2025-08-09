@@ -10,7 +10,7 @@ interface CatRailProps {
     openModal: (project: PortfolioItem) => void
 }
 
-const CatRail = ({ categoryId, openModal }: CatRailProps) => {
+const CategoryRail = ({ categoryId, openModal }: CatRailProps) => {
     const { data, loading, error } = useQuery(GET_PORTFOLIO_ITEMS_QUERY, {
         variables: {
             categoryId: categoryId,
@@ -119,4 +119,4 @@ const CatRail = ({ categoryId, openModal }: CatRailProps) => {
     )
 }
 
-export default CatRail
+export default CategoryRail

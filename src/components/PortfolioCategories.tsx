@@ -3,7 +3,7 @@
 import { useQuery } from '@apollo/client'
 import { GET_CATEGORIES_QUERY } from '@/app/graphql/queries'
 import { Category, PortfolioItem } from '@/types'
-import CatRail from './CatRail'
+import CatRail from './CategoryRail'
 import { Card } from '@radix-ui/themes'
 import ProjectModal from './ProjectModal'
 import { useState } from 'react'
@@ -12,7 +12,7 @@ interface CategoryData {
     categories: Category[]
 }
 
-const PortCats = () => {
+const PortfolioCategories = () => {
     const [selectedProject, setSelectedProject] =
         useState<PortfolioItem | null>(null)
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -120,4 +120,4 @@ const PortCats = () => {
     )
 }
 
-export default PortCats
+export default PortfolioCategories
