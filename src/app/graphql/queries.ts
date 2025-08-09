@@ -27,6 +27,7 @@ const GET_PORTFOLIO_ITEM_QUERY = gql`
             repoUrl
             projectUrl
             auxImgAspectRatio
+            deadProject
         }
     }
 `

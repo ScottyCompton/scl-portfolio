@@ -4,12 +4,13 @@ import { GET_PORTFOLIO_ITEM_QUERY } from '@/app/graphql/queries'
 import { PortfolioItem } from '@/types'
 
 import * as Dialog from '@radix-ui/react-dialog'
-import { Badge, Button } from '@radix-ui/themes'
-import { X, ExternalLink, Github } from 'lucide-react'
+import { Button } from '@radix-ui/themes'
+import { X, ExternalLink, Github, Skull } from 'lucide-react'
 import Image from 'next/image'
 import { useEffect, useMemo, useState } from 'react'
 import { useQuery } from '@apollo/client'
 import { useTheme } from '@/contexts/ThemeContext'
+import { Skeleton } from '@/components/ui/loading-skeleton'
 
 interface ProjectModalProps {
     project: PortfolioItem | null
@@ -62,6 +63,12 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
               .filter(Boolean)
         : []
 
+    // Display-friendly URL without protocol
+    const displayUrl = useMemo(() => {
+        const raw = data?.portfolioItem?.projectUrl || ''
+        return raw.replace(/^https?:\/\//i, '').replace(/\/$/, '')
+    }, [data?.portfolioItem?.projectUrl])
+
     if (error) {
         return null
     }
@@ -94,14 +101,66 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                             </div>
                             {/* Body */}
                             <div className="flex-1 overflow-y-auto px-5 py-5">
-                                <div className="flex items-center justify-center">
-                                    <div className="flex flex-col items-center space-y-4 text-center">
-                                        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 dark:border-blue-400"></div>
-                                        <p className="text-gray-600 dark:text-gray-400 text-base">
-                                            Loading project details...
-                                        </p>
+                                <div className="grid grid-cols-1 gap-6 md:grid-cols-[auto_1fr] items-start">
+                                    {/* Preview Image */}
+                                    <div className="w-full md:w-[300px] mx-auto md:mx-0">
+                                        <div className="relative aspect-[2/3] overflow-hidden rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900">
+                                            <Skeleton className="absolute inset-0" />
+                                        </div>
+                                        <div className="mt-3 grid grid-cols-6 gap-2">
+                                            {Array.from({ length: 6 }).map(
+                                                (_, idx) => (
+                                                    <Skeleton
+                                                        key={idx}
+                                                        className="h-12 w-full rounded-md"
+                                                    />
+                                                )
+                                            )}
+                                        </div>
+                                    </div>
+                                    {/* Details */}
+                                    <div className="flex flex-col gap-4">
+                                        <div className="space-y-2">
+                                            <Skeleton className="h-4 w-5/6" />
+                                            <Skeleton className="h-4 w-2/3" />
+                                            <Skeleton className="h-4 w-1/2" />
+                                        </div>
+
+                                        <div>
+                                            <Skeleton className="h-4 w-40 mb-2" />
+                                            <div className="flex flex-wrap gap-2">
+                                                {Array.from({ length: 6 }).map(
+                                                    (_, idx) => (
+                                                        <Skeleton
+                                                            key={idx}
+                                                            className="h-6 w-20 rounded-full"
+                                                        />
+                                                    )
+                                                )}
+                                            </div>
+                                        </div>
+
+                                        <div className="space-y-2">
+                                            {Array.from({ length: 5 }).map(
+                                                (_, idx) => (
+                                                    <Skeleton
+                                                        key={idx}
+                                                        className="h-4 w-full"
+                                                    />
+                                                )
+                                            )}
+                                        </div>
+
+                                        <div className="mt-2 flex flex-wrap gap-3">
+                                            <Skeleton className="h-10 w-32 rounded-full" />
+                                            <Skeleton className="h-10 w-32 rounded-full" />
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                            {/* Footer */}
+                            <div className="flex items-center justify-end gap-3 border-t border-gray-200 dark:border-gray-800 px-5 py-4">
+                                <Skeleton className="h-10 w-24" />
                             </div>
                         </div>
                     </Dialog.Content>
@@ -208,16 +267,18 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                                             <h3 className="mb-2 text-sm font-semibold text-gray-800 dark:text-gray-200">
                                                 Technologies Used
                                             </h3>
+
                                             <div className="flex flex-wrap gap-2">
-                                                {techSpecLabels.map((label) => (
-                                                    <Badge
-                                                        key={label}
-                                                        size="1"
-                                                        color="indigo"
-                                                    >
-                                                        {label}
-                                                    </Badge>
-                                                ))}
+                                                {techSpecLabels.map(
+                                                    (tech, techIndex) => (
+                                                        <span
+                                                            key={techIndex}
+                                                            className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs font-medium rounded-full border border-blue-200 dark:border-blue-700"
+                                                        >
+                                                            {tech}
+                                                        </span>
+                                                    )
+                                                )}
                                             </div>
                                         </div>
                                     )}
@@ -231,33 +292,57 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                                     {(data?.portfolioItem.projectUrl ||
                                         data?.portfolioItem.repoUrl) && (
                                         <div className="mt-2 flex flex-wrap gap-3">
-                                            {data?.portfolioItem.projectUrl && (
-                                                <Button
-                                                    asChild
-                                                    variant="soft"
-                                                    color="blue"
-                                                >
-                                                    <a
-                                                        href={
-                                                            data.portfolioItem
-                                                                .projectUrl
-                                                        }
-                                                        target="_blank"
-                                                        rel="noreferrer"
-                                                        className="inline-flex items-center gap-2 cursor-pointer"
-                                                    >
-                                                        <ExternalLink className="h-4 w-4r" />
-                                                        <span className=" cursor-pointer">
-                                                            Visit Site
+                                            {data?.portfolioItem.projectUrl &&
+                                                (data?.portfolioItem
+                                                    .deadProject ? (
+                                                    <div className="inline-flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                                                        <span className="font-semibold">
+                                                            URL:
                                                         </span>
-                                                    </a>
-                                                </Button>
-                                            )}
+                                                        <span className="font-mono">
+                                                            {displayUrl}
+                                                        </span>
+                                                        <span className="inline-flex items-center gap-1 text-gray-600 dark:text-gray-400">
+                                                            <span>
+                                                                (defunct
+                                                            </span>
+                                                            <Skull
+                                                                className="h-4 w-4"
+                                                                aria-label="defunct"
+                                                            />
+                                                            <span>)</span>
+                                                        </span>
+                                                    </div>
+                                                ) : (
+                                                    <Button
+                                                        asChild
+                                                        variant="soft"
+                                                        color="blue"
+                                                        radius="large"
+                                                    >
+                                                        <a
+                                                            href={
+                                                                data
+                                                                    .portfolioItem
+                                                                    .projectUrl
+                                                            }
+                                                            target="_blank"
+                                                            rel="noreferrer"
+                                                            className="inline-flex items-center gap-2 cursor-pointer"
+                                                        >
+                                                            <div className="flex items-center gap-2 cursor-pointer px-6 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs font-medium rounded-full border border-blue-200 dark:border-blue-700 ">
+                                                                <ExternalLink className="h-4 w-4" />
+                                                                Visit Site
+                                                            </div>
+                                                        </a>
+                                                    </Button>
+                                                ))}
                                             {data?.portfolioItem.repoUrl && (
                                                 <Button
                                                     asChild
                                                     variant="outline"
                                                     color="indigo"
+                                                    radius="large"
                                                 >
                                                     <a
                                                         href={

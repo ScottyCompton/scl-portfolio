@@ -7,6 +7,7 @@ export interface PortfolioItem {
     previewImgUrl?: string
     repoUrl?: string
     projectUrl?: string
+    deadProject?: boolean
     auxImgAspectRatio?: number
     categories?: string[]
     auxImgs?: Array<{

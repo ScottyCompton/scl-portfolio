@@ -21,6 +21,7 @@ const mocks = [
                     repoUrl: '',
                     projectUrl: '',
                     auxImgAspectRatio: 1.5,
+                    deadProject: false,
                 },
             },
         },
@@ -29,11 +30,13 @@ const mocks = [
 
 describe('ProjectModal', () => {
     it('renders title when open and data loads', async () => {
-        renderWithProviders(
+        const utils = renderWithProviders(
             <ProjectModal project={project} isOpen={true} onClose={() => {}} />,
             { apolloMocks: mocks }
         )
-
+        // Debug DOM to diagnose portal rendering if fails
+        // eslint-disable-next-line no-console
+        // console.log(document.body.innerHTML)
         expect(await screen.findByText('Proj')).toBeInTheDocument()
     })
 })
