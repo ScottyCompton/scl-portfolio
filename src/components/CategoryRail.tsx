@@ -1,5 +1,7 @@
 import Slider from 'react-slick'
 import Image from 'next/image'
+import { useMemo } from 'react'
+import { shuffle } from 'lodash'
 import { PortfolioItem } from '@/types'
 import SliderArrow from '@/components/SliderArrow'
 import { GET_PORTFOLIO_ITEMS_QUERY } from '@/app/graphql/queries'
@@ -17,9 +19,16 @@ const CategoryRail = ({ categoryId, openModal }: CatRailProps) => {
         },
     })
 
+    const portfolioItems = data?.portfolioItems as PortfolioItem[] | undefined
+    const items = useMemo(() => portfolioItems ?? [], [portfolioItems])
+
+    const randomizedItems = useMemo(() => {
+        if (!items.length) return []
+        return shuffle(items)
+    }, [items])
+
     if (loading) return <p>Loading...</p>
     if (error) return <p>Error: {error.message}</p>
-    const { portfolioItems } = data
 
     const handleProjectClick = (project: PortfolioItem) => {
         openModal(project)
@@ -90,8 +99,8 @@ const CategoryRail = ({ categoryId, openModal }: CatRailProps) => {
         <>
             <div className="slider-container w-full relative mt-3">
                 <Slider {...settings}>
-                    {portfolioItems &&
-                        portfolioItems.map((item: PortfolioItem) => (
+                    {randomizedItems &&
+                        randomizedItems.map((item: PortfolioItem) => (
                             <div
                                 className="text-center w-full flex flex-col items-center"
                                 key={item._id}
