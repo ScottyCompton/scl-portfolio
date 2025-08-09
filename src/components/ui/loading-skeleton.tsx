@@ -16,11 +16,28 @@ export function Skeleton({ className }: SkeletonProps) {
 }
 
 // Project Card Skeleton
-export function ProjectCardSkeleton() {
+export function ProjectCardSkeleton({
+    imageShape = 'rect',
+    className,
+}: {
+    imageShape?: 'rect' | 'circle'
+    className?: string
+}) {
     return (
-        <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
+        <div
+            className={cn(
+                'bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden',
+                className
+            )}
+        >
             {/* Image Skeleton */}
-            <div className="aspect-video bg-gray-200 dark:bg-gray-700 animate-pulse" />
+            {imageShape === 'circle' ? (
+                <div className="flex items-center justify-center p-4 sm:p-6">
+                    <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-gray-200 dark:bg-gray-700 animate-pulse" />
+                </div>
+            ) : (
+                <div className="aspect-video bg-gray-200 dark:bg-gray-700 animate-pulse" />
+            )}
 
             {/* Content Skeleton */}
             <div className="p-4 sm:p-6">

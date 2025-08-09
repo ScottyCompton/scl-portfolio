@@ -1,6 +1,7 @@
 'use client'
 
 import { useQuery } from '@apollo/client'
+import PortfolioCategoriesSkeleton from './PortfolioCategoriesSkeleton'
 import { GET_CATEGORIES_QUERY } from '@/app/graphql/queries'
 import { Category, PortfolioItem } from '@/types'
 import CatRail from './CategoryRail'
@@ -41,13 +42,7 @@ const PortfolioCategories = () => {
     const { loading, error, data } =
         useQuery<CategoryData>(GET_CATEGORIES_QUERY)
 
-    if (loading) {
-        return (
-            <div className="flex justify-center items-center min-h-[60vh]">
-                <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-blue-600 dark:border-blue-400"></div>
-            </div>
-        )
-    }
+    if (loading) return <PortfolioCategoriesSkeleton />
 
     if (error) {
         return (

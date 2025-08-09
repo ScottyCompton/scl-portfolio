@@ -14,12 +14,13 @@ import {
 import { useState } from 'react'
 
 import { useQuery } from '@apollo/client'
+import AboutSectionSkeleton from './AboutSectionSkeleton'
 import { GET_CONTENT_SETTINGS_QUERY } from '@/app/graphql/queries'
 
 const AboutSection = () => {
     const [isExpanded, setIsExpanded] = useState(false)
     const { data, loading, error } = useQuery(GET_CONTENT_SETTINGS_QUERY)
-    if (loading) return <p>Loading...</p>
+    if (loading) return <AboutSectionSkeleton />
     if (error) return <p>Error: {error.message}</p>
     const {
         aboutTitle,

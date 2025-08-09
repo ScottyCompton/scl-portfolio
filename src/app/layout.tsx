@@ -77,7 +77,7 @@ export default function RootLayout({
     return (
         <html lang="en" className="scroll-smooth">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-br from-gray-500 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 min-h-screen`}
+                className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-br from-gray-500 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 min-h-screen flex flex-col`}
             >
                 <ErrorBoundary>
                     <ThemeProvider>
@@ -85,7 +85,7 @@ export default function RootLayout({
                             <ApolloProviderWrapper>
                                 <QueryProvider>
                                     <Navigation />
-                                    {children}
+                                    <main className="flex-1">{children}</main>
                                     <SiteFooter />
                                 </QueryProvider>
                             </ApolloProviderWrapper>
