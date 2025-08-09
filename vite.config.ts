@@ -12,9 +12,14 @@ const exclusions = [
     '**/*.config*',
     '.vscode',
     'tests/utils/test-utils.tsx',
+    '**/route.ts',
+    '**/layout.tsx',
     'html/*',
+    '**/lib/utils.ts',
     'scripts/**',
-    '',
+    'types/**',
+    '**/index.ts',
+    '*.d.ts',
 ]
 
 // Vite configuration
@@ -22,7 +27,7 @@ const config = defineConfig({
     plugins: [react()],
     resolve: {
         alias: {
-            '@': path.resolve(__dirname, './'),
+            '@': path.resolve(__dirname, './src'),
         },
     },
 })
@@ -35,13 +40,19 @@ const tstConfig = defineConfig({
         exclude: exclusions,
         coverage: {
             exclude: exclusions,
+            thresholds: {
+                statements: 85,
+                branches: 75,
+                functions: 80,
+                lines: 85,
+            },
         },
         setupFiles: './tests/setup.js',
         testTimeout: 10000,
     },
     resolve: {
         alias: {
-            '@': path.resolve(__dirname, './'),
+            '@': path.resolve(__dirname, './src'),
         },
     },
 })
