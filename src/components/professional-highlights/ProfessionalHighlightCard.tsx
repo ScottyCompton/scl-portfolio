@@ -24,6 +24,11 @@ const ProfessionalHighlightCard = ({
         setIsExpanded(true)
     }
 
+    const isExternalAvatarUrl = /^https?:\/\//i.test(highlight.avatar)
+    const avatarSrc = isExternalAvatarUrl
+        ? highlight.avatar
+        : `/images/logos/${highlight.avatar}`
+
     return (
         <div className="rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm">
             <div className="p-6 pb-4">
@@ -49,11 +54,12 @@ const ProfessionalHighlightCard = ({
                     <div className="ml-4 w-25 h-25 rounded-lg flex items-center justify-center shadow-md overflow-hidden">
                         {highlight.avatar ? (
                             <Image
-                                src={`/images/logos/${highlight.avatar}`}
+                                src={avatarSrc}
                                 alt={`${highlight.orgName} logo`}
                                 width={100}
                                 height={100}
                                 className="w-full h-full object-cover"
+                                unoptimized={isExternalAvatarUrl}
                                 onError={() => {
                                     // Fallback to initials if image fails to load
                                     const fallback = document.querySelector(

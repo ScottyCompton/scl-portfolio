@@ -26,6 +26,26 @@ const nextConfig = {
                 hostname: 'firebasestorage.googleapis.com',
                 pathname: '/v0/b/**',
             },
+            {
+                protocol: 'https',
+                hostname: 'drive.google.com',
+                pathname: '/file/d/**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'drive.usercontent.google.com',
+                pathname: '/download/**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'drive.usercontent.google.com',
+                pathname: '/download',
+            },
+            {
+                protocol: 'https',
+                hostname: 'lh3.googleusercontent.com',
+                pathname: '/**',
+            },
         ],
     },
     webpack: (config, { isServer, dev }) => {
