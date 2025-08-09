@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Menu, X } from 'lucide-react'
 import { useUIStore } from '@/lib/stores/ui-store'
 import ThemeToggle from '@/components/ThemeToggle'
+import ContactModal from '@/components/ContactModal'
 
 export function Navigation() {
     const [isOpen, setIsOpen] = useState(false)
@@ -30,13 +31,36 @@ export function Navigation() {
         {
             href: '#contact',
             label: 'Contact Me',
-            onClick: () => setOpenContactModal(),
+            onClick: () => openModal(),
         },
     ]
 
-    const setOpenContactModal = () => {
-        alert('Contact Me')
-        setIsContactOpen(true)
+    const openModal = (e?: React.MouseEvent<HTMLAnchorElement>) => {
+        if (e) e.preventDefault()
+
+        const modalContainer = document.getElementById(
+            'contact-modal-container'
+        )
+        modalContainer?.classList.remove('opacity-0', 'pointer-events-none')
+        modalContainer?.classList.add('opacity-100')
+        setTimeout(() => {
+            setIsContactOpen(true)
+            setIsOpen(false)
+        }, 500)
+
+        // setIsContactOpen(true)
+        // // Close mobile menu if open
+        // setIsOpen(false)
+    }
+
+    const closeModal = () => {
+        setIsContactOpen(false)
+        setIsOpen(false)
+        const modalContainer = document.getElementById(
+            'contact-modal-container'
+        )
+        modalContainer?.classList.remove('opacity-100')
+        modalContainer?.classList.add('opacity-0', 'pointer-events-none')
     }
 
     return (
@@ -65,7 +89,7 @@ export function Navigation() {
                                         key={item.href}
                                         href={item.href}
                                         className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors min-h-touch"
-                                        onClick={item.onClick}
+                                        onClick={openModal}
                                     >
                                         {item.label}
                                     </a>
@@ -112,7 +136,7 @@ export function Navigation() {
                                         key={item.href}
                                         href={item.href}
                                         className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors min-h-touch"
-                                        onClick={item.onClick}
+                                        onClick={openModal}
                                     >
                                         {item.label}
                                     </a>
@@ -121,7 +145,6 @@ export function Navigation() {
                                         key={item.href}
                                         href={item.href}
                                         className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors min-h-touch"
-                                        onClick={item.onClick}
                                     >
                                         {item.label}
                                     </a>
@@ -130,6 +153,13 @@ export function Navigation() {
                         </div>
                     </div>
                 )}
+                {/* Contact Modal */}
+                <div
+                    id="contact-modal-container"
+                    className="bg-gray-50 dark:bg-gray-900 transition-opacity ease-in opacity-0 duration-500 pointer-events-none w-full h-full fixed top-0 left-0"
+                >
+                    <ContactModal open={isContactOpen} onClose={closeModal} />
+                </div>
             </div>
         </nav>
     )
