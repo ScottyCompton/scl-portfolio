@@ -16,7 +16,7 @@ describe('ThemeWrapper', () => {
                 </ThemeWrapper>
             </ThemeProvider>
         )
-        // initial theme is light
-        expect(document.documentElement.classList.contains('dark')).toBe(false)
+        // initial theme is dark by default in ThemeProvider
+        expect(document.documentElement.classList.contains('dark')).toBe(true)
     })
 })

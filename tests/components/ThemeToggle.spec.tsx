@@ -8,13 +8,14 @@ import ThemeToggle from '@/components/ThemeToggle'
 
 describe('ThemeToggle', () => {
     it('toggles theme label', () => {
+        localStorage.clear()
         renderWithProviders(<ThemeToggle />)
         const button = screen.getByRole('button', {
-            name: /switch to dark mode/i,
+            name: /switch to light mode/i,
         })
         fireEvent.click(button)
         expect(
-            screen.getByRole('button', { name: /switch to light mode/i })
+            screen.getByRole('button', { name: /switch to dark mode/i })
         ).toBeInTheDocument()
     })
 })
