@@ -128,45 +128,11 @@
             "detaileDesc": "The Dynamic Objects Framework - now there's a story worth telling! Imagine being handed the task of creating a digital equivalent of LEGO blocks, but instead of building physical structures, these blocks could be assembled into any application imaginable, and then magically reconfigured by end users without touching a single line of code. That's exactly what we built at Aperia Solutions, and it was like being the architect of a digital universe where the laws of physics were written in React components and the inhabitants could reshape their world at will. The framework was like a digital Swiss Army knife that could transform into any tool the user needed, whether they were building a simple contact form or a complex enterprise application.\n\nCoordinating 20 designers and developers across multiple time zones was like conducting a digital orchestra where some musicians were playing in New York while others were performing in Mumbai, and somehow we all had to create beautiful music together. It was a masterclass in digital diplomacy, where understanding cultural differences, time zones, and communication styles was just as important as understanding React hooks and state management. The offshore teams brought their own unique perspectives and approaches to problem-solving, creating a beautiful melting pot of ideas that resulted in solutions more innovative than any single team could have produced alone.\n\nThe Swagger API development was like being the digital equivalent of a city planner, designing the infrastructure that would allow all our applications to communicate seamlessly with each other. Each API endpoint was like a well-designed intersection in a bustling digital city, where data could flow freely and efficiently without traffic jams or accidents. The proof-of-concept prototypes were like digital sketches, quick and dirty but full of potential, allowing us to test ideas before committing to full development. It was a playground for innovation, where we could experiment with new technologies and approaches without the pressure of production deadlines looming over our heads."
         },
         {
-            "jobTitle": "Contract Web Developer",
-            "orgName": "Self-Employed",
-            "location": "Los Angeles CA (remote)",
-            "startDate": "Nov 2017",
-            "endDate": "Oct 2019",
-            "responsibilities": [
-                "Conducted requirements gathering, design, development and deployment of multiple web-based applications",
-                "Coordinated with project clients on gathering requirements, creating and approving designs, project development timelines, device viewing specifications and other critical aspects of application development",
-                "Recommended and implemented best-practices solutions for clients based off requirements provided",
-                "Acquired and coordinated sub-contractors in support of design and development of multiple web applications",
-                "Conducted soup-to-nuts development of web-based applications including backend development, API development, database development administration, code deployment, user-experience optimization",
-                "Created and deployed pixel-perfect web applications utilizing multiple applications languages, development paradigms and design methodologies"
-            ],
-            "technologies": [
-                "React",
-                "Redux State Management",
-                "Next.js",
-                "SiteCore",
-                "TypeScript",
-                "JavaScript",
-                "CSS",
-                "HTML",
-                "GitHub",
-                "Node.js",
-                "SQL Server",
-                "JSON",
-                "MongoDB",
-                "PostGres DB",
-                "MySQLDB"
-            ],
-            "avatar": "https://lh3.googleusercontent.com/d/1Qzs9W-T1akDqAQNmmQic4Nz0VKKAVqbl",
-            "detaileDesc": "Ah, the wild west of freelance development! My time as a self-employed web developer was like being a digital gunslinger, riding from town to town (or rather, from client to client) with nothing but my coding skills and a laptop to make my fortune. Each project was like a new adventure, where I'd arrive in a client's digital territory, assess the situation, and then craft solutions that would transform their digital presence from a tumbleweed-strewn ghost town into a bustling metropolis of user engagement. The requirements gathering phase was like being a digital detective, asking the right questions to uncover what clients really needed versus what they thought they wanted.\n\nThe coordination with sub-contractors was like being the conductor of a digital symphony where each musician was playing their own instrument in their own studio, and somehow I had to make sure they all came together to create beautiful music. It was a masterclass in project management, where I had to balance the creative visions of designers, the technical requirements of developers, and the business needs of clients, all while keeping everyone on schedule and within budget. The soup-to-nuts development approach meant I was like a digital renaissance person, handling everything from database design to front-end animations, from server configuration to user experience optimization.\n\nThe pixel-perfect applications were like digital works of art, where every element had to be positioned with the precision of a master craftsman and every interaction had to feel as natural as breathing. Whether I was working with React's component architecture, wrestling with the complexities of Redux state management, or diving deep into the world of databases (from the structured world of SQL Server to the flexible realm of MongoDB), each technology choice was like selecting the right tool for the right job. The deployment process was like launching a rocket - months of preparation, careful testing, and then that magical moment when the application went live and started serving real users in the wild."
-        },
-        {
             "jobTitle": "Lead UI/UX Designer and Developer",
             "orgName": "DotStudios",
             "location": "Los Angeles CA (remote)",
             "startDate": "Jan 2017",
-            "endDate": "Nov 2017",
+            "endDate": "Oct 2019",
             "responsibilities": [
                 "Conducted requirements gathering, design, development and deployment of multiple web-based applications",
                 "Created and maintained wireframes, Photoshop designs and prototypes based off provided requirements",
@@ -244,65 +210,6 @@
             ],
             "avatar": "https://lh3.googleusercontent.com/d/1DfvtV2-oILye3OexUn7OyHFcgAm6uV-U",
             "detaileDesc": "The Eversify Project was like being part of a digital revolution in the newspaper industry - imagine helping traditional print media transform into a dynamic, mobile-first digital experience that could reach readers anywhere, anytime. It was like being a digital alchemist, taking the static world of print newspapers and transforming it into something that could dance across screens of all sizes. The CMS we built was like a digital printing press that could instantly distribute content to mobile devices, tablets, and web browsers, all while maintaining the editorial integrity and design excellence that readers expected from their trusted news sources.\n\nWorking with a team of 15 developers in an agile workflow was like being part of a digital orchestra where everyone had their own instrument and their own part to play, but we all had to create beautiful music together. The Python and Django stack was like having a Swiss Army knife for web development - powerful, flexible, and capable of handling everything from simple content management to complex data processing. The PostgreSQL database was like our digital library, storing and organizing content with the precision of a master librarian who knew exactly where every piece of information belonged.\n\nThe mentorship aspect was particularly rewarding in this collaborative environment - watching junior developers learn the intricacies of full-stack development was like teaching someone to cook while running a busy restaurant kitchen. Every bug fix was like solving a puzzle, where the pieces were scattered across front-end JavaScript, back-end Python, and database queries. The user story creation was like being a digital storyteller, translating business requirements into technical narratives that developers could understand and implement. It was a beautiful blend of creativity and technical expertise, where every enhancement had to serve both the editorial needs of newspaper clients and the technical requirements of modern web development."
-        },
-        {
-            "jobTitle": "Contract UI/UX Developer and Designer",
-            "orgName": "LRN, Inc.",
-            "location": "Los Angeles, CA",
-            "startDate": "May 2013",
-            "endDate": "Nov 2013",
-            "responsibilities": [
-                "As lead designer and UX/UI developer for the Catalyst Course Platform, acted in the role of both lead designer and front-end developer",
-                "Utilized several disciplines including cross-browser development, custom object-oriented JavaScript, graphic design, wire framing, custom illustration, CSS, application engineering and development",
-                "Worked closely with project managers and stakeholders to clarify vague or incomplete requirements, translating to usable JIRA stories",
-                "Provided technical advice, guidance and mentorship to junior developers and team members with respect to front-end development and user experience",
-                "Provided multiple wireframes and Photoshop designs to communicate requirements for intended development",
-                "Developed methodology and implementation of dynamic styling configuration of the Catalyst application by the end-user administrator of the application"
-            ],
-            "technologies": [
-                "JavaScript",
-                "CSS",
-                "HTML",
-                "Node.js",
-                "PHP",
-                "Zend framework",
-                "MySQLDB"
-            ],
-            "avatar": "https://lh3.googleusercontent.com/d/1xI5VD5smwSRuoJufph00vJscNP0I9o66",
-            "detaileDesc": "The Catalyst Course Platform was like being the architect of a digital university where every student could have a personalized learning experience tailored to their unique needs and preferences. As both lead designer and front-end developer, I was like a digital renaissance person, wearing multiple hats and switching between creative and technical mindsets with the ease of a chameleon changing colors. The platform was like a digital canvas where I could paint with pixels and code, creating interfaces that weren't just functional but beautiful, intuitive, and engaging. Every wireframe was like a blueprint for a digital classroom, every Photoshop design a window into the future of online education.\n\nThe cross-browser development was like being a digital diplomat, ensuring that our application could speak the language of every browser and device it encountered. The custom object-oriented JavaScript was like writing poetry in code, creating elegant solutions that could handle the complex interactions required for modern web applications. The dynamic styling configuration was like giving users the keys to their own digital kingdom, allowing them to customize their learning environment without needing to understand the underlying code. It was a beautiful blend of technical sophistication and user empowerment, where complexity was hidden behind simple, intuitive interfaces.\n\nThe mentorship aspect was particularly rewarding in this educational context - teaching junior developers about front-end development and user experience was like being a digital professor, sharing knowledge that would serve them throughout their careers. The wireframes and Photoshop designs were like visual stories, communicating complex requirements in a language that everyone could understand. The stakeholder collaboration was like being a bridge between the world of education and the world of technology, ensuring that every feature served the needs of both learners and administrators. It was a beautiful example of how technology could enhance education, making learning more accessible, engaging, and personalized than ever before."
-        },
-        {
-            "jobTitle": "Freelance Web Designer, Programmer & Developer",
-            "orgName": "TechGuru4Hire",
-            "location": "Los Angeles, CA",
-            "startDate": "Jan 2003",
-            "endDate": "May 2013",
-            "responsibilities": [
-                "Storeboard.com – Business social networking website – Front-end, middle-tier and backend coding, HTML4/5, CSS 2/3, ASP, JavaScript, Microsoft SQL Server, streaming media, AJAX, graphic design",
-                "Vonazon.com – Talent Agency Staffing and recruiting website – Wordpress CMS, theme creation, Graphic Design, AJAX, PHP, JavaScript, jQuery, HTML4/5, CSS 2/3, MySQL",
-                "Synergytvnetwork.com – Media / entertainment website – Wordpress CMS, theme creation, graphic design, AJAX, PHP, JavaScript, jQuery, HTML4/5, CSS 2/3, jQuery UI, Responsive Design, CSS Media Queries, streaming media, MySQL",
-                "FilmFestivalFlix.com – Media / entertainment website – Wordpress CMS, theme creation, Graphic Design, AJAX, PHP, JavaScript, jQuery, HTML4/5, CSS 2/3, jQuery UI, Responsive Design, CSS Media Queries, streaming media, e-commerce, MySQL"
-            ],
-            "technologies": [
-                "Wordpress",
-                "PHP",
-                "JavaScript",
-                "jQuery",
-                "HTML4/5",
-                "CSS 2/3",
-                "MySQL",
-                "ASP",
-                "Microsoft SQL Server",
-                "AJAX",
-                "jQuery UI",
-                "Responsive Design",
-                "CSS Media Queries",
-                "Streaming Media",
-                "E-commerce",
-                "Graphic Design"
-            ],
-            "avatar": "https://lh3.googleusercontent.com/d/1o4_fAr1ifuKUbn8wcx8kFr7-JHN6D629",
-            "detaileDesc": "Ah, the early days of the digital frontier! My decade-long journey as a freelance web designer and developer was like being a digital pioneer, exploring uncharted territories of the internet and building digital settlements wherever clients needed them. Each project was like a new adventure, where I'd arrive with nothing but my coding skills and a vision, and leave behind a fully functional digital ecosystem that could serve users from anywhere in the world. Storeboard.com was like building a digital town square where business professionals could gather, network, and share ideas - a social networking platform before social networking was cool, complete with streaming media capabilities that were cutting-edge for the time.\n\nThe WordPress CMS became my trusty steed during this period, allowing me to create beautiful, functional websites that clients could manage themselves without needing to understand the complexities of code. Vonazon.com was like creating a digital talent agency where recruiters and job seekers could find each other in a beautifully designed environment. Synergytvnetwork.com was like building a digital television network, complete with streaming media capabilities and responsive design that worked across all devices. FilmFestivalFlix.com was like creating a digital film festival that could run year-round, with e-commerce capabilities that allowed users to purchase tickets and merchandise directly from the platform.\n\nThe technology stack was like a digital Swiss Army knife, with each tool serving a specific purpose in the creation of these digital experiences. From the structured world of ASP and Microsoft SQL Server to the flexible realm of PHP and MySQL, from the static world of HTML4 to the dynamic possibilities of CSS3 and jQuery, every technology choice was like selecting the right tool for the right job. The responsive design and CSS media queries were like creating digital chameleons that could adapt to any screen size, ensuring that users had a perfect experience whether they were accessing our sites from a desktop computer or a mobile phone. It was a beautiful period of digital innovation, where every project pushed the boundaries of what was possible on the web."
         }
     ]
 }
