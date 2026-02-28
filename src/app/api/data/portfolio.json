@@ -558,7 +558,7 @@
             "techSpecs": [
                 "Laravel 5.7",
                 "ElasticSearch",
-                "Classic ASP",
+                "PHP",
                 "SQL Server",
                 "HTML5",
                 "CSS3",
@@ -892,11 +892,9 @@
                 "jQuery",
                 "Adobe Photoshop",
                 "Adobe Illustrator",
-                "Laravel 5.7",
-                "ElasticSearch",
-                "Classic ASP",
-                "SQL Server",
-                "Oracle"
+                "PHP",
+                "Wordpress",
+                "SQL Server"
             ],
             "auxImgs": [
                 {
