@@ -16,7 +16,7 @@ interface SkillsBarChartProps {
 const SkillsBarChart = ({ techSpecs }: SkillsBarChartProps) => {
     const { theme } = useTheme()
     const currentYear = new Date().getFullYear()
-    const timelineStart = 1996
+    const timelineStart = 2014
     const timelineEnd = currentYear
     const timelineSpan = timelineEnd - timelineStart + 1
 

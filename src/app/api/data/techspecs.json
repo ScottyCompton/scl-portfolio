@@ -28,17 +28,17 @@
         {
             "title": "WordPress",
             "_id": "60c4d9f78d9ea066f4a762d5",
-            "from": "2004"
+            "from": "2014"
         },
         {
             "title": "PHP",
             "_id": "60c4d9f78d9ea066f4a762d6",
-            "from": "2004"
+            "from": "2014"
         },
         {
             "title": "MySQL",
             "_id": "60c4d9f78d9ea066f4a762d7",
-            "from": "2004"
+            "from": "2014"
         },
         {
             "title": "MongoDB",
@@ -79,37 +79,37 @@
         {
             "title": "JavaScript",
             "_id": "60c4d9f78d9ea066f4a762df",
-            "from": "2000"
+            "from": "2014"
         },
         {
             "title": "HTML/HTML5",
             "_id": "60c4d9f78d9ea066f4a762e0",
-            "from": "1996"
+            "from": "2014"
         },
         {
             "title": "CSS3",
             "_id": "60c4d9f78d9ea066f4a762e1",
-            "from": "2000"
+            "from": "2014"
         },
         {
             "title": "Bootstrap",
             "_id": "60c4d9f78d9ea066f4a762e2",
-            "from": "2012"
+            "from": "2014"
         },
         {
             "title": "jQuery",
             "_id": "60c4d9f78d9ea066f4a762e3",
-            "from": "2006"
+            "from": "2014"
         },
         {
             "title": "Adobe Photoshop",
             "_id": "60c4d9f78d9ea066f4a762e4",
-            "from": "2000"
+            "from": "2014"
         },
         {
             "title": "Adobe Illustrator",
             "_id": "60c4d9f78d9ea066f4a762e5",
-            "from": "2000"
+            "from": "2014"
         },
         {
             "title": "Laravel",
@@ -124,27 +124,15 @@
             "to": "2020"
         },
         {
-            "title": "Classic ASP",
-            "_id": "60c4d9f78d9ea066f4a762e8",
-            "from": "2000",
-            "to": "2010"
-        },
-        {
             "title": "SQL Server",
             "_id": "60c4d9f78d9ea066f4a762e9",
-            "from": "2000"
+            "from": "2014"
         },
         {
             "title": "Oracle",
             "_id": "60c4d9f78d9ea066f4a762ea",
             "from": "2020",
             "to": "2021"
-        },
-        {
-            "title": "Video Streaming",
-            "_id": "60c4d9f78d9ea066f4a762eb",
-            "from": "2010",
-            "to": "2015"
         },
         {
             "title": "GraphQL",

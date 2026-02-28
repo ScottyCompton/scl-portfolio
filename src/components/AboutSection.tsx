@@ -45,7 +45,7 @@ const AboutSection = () => {
                 <div className="lg:hidden">
                     {/* Avatar/Image - Centered */}
                     <div className="flex justify-center mb-6">
-                        <Card className="w-64 h-64 overflow-hidden">
+                        <div className="w-80 h-80 overflow-hidden rounded-full bg-none">
                             <CardContent className="p-0 h-full">
                                 {aboutImgUrl ? (
                                     <Image
@@ -53,7 +53,7 @@ const AboutSection = () => {
                                         alt={aboutTitle}
                                         width={320}
                                         height={320}
-                                        className="w-full h-full object-cover"
+                                        className="mx-auto rounded-full object-cover"
                                     />
                                 ) : (
                                     <div className="w-full h-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
@@ -71,7 +71,7 @@ const AboutSection = () => {
                                     </div>
                                 )}
                             </CardContent>
-                        </Card>
+                        </div>
                     </div>
 
                     {/* About Blurb with toggle */}
@@ -173,7 +173,7 @@ const AboutSection = () => {
                             <Flex direction="row" gap="4">
                                 <div>
                                     <div className="float-left mr-8 mb-2">
-                                        <Card className="w-80 h-80 overflow-hidden">
+                                        <div className="w-80 h-80 overflow-hidden rounded-full bg-none">
                                             <CardContent className="p-0 h-full">
                                                 {aboutImgUrl ? (
                                                     <Image
@@ -204,7 +204,7 @@ const AboutSection = () => {
                                                     </div>
                                                 )}
                                             </CardContent>
-                                        </Card>
+                                        </div>
                                     </div>
 
                                     <div
