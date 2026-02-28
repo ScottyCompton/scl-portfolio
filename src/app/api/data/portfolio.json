@@ -401,12 +401,10 @@
             "auxImgAspectRatio": 64.3,
             "techSpecs": [
                 "Laravel 5.7",
-                "ElasticSearch",
-                "Classic ASP",
+                "PHP",
                 "SQL Server",
                 "HTML5",
                 "CSS3",
-                "Bootstrap",
                 "jQuery",
                 "Adobe Photoshop",
                 "Adobe Illustrator"
@@ -557,7 +555,6 @@
             "auxImgAspectRatio": 64.3,
             "techSpecs": [
                 "Laravel 5.7",
-                "ElasticSearch",
                 "PHP",
                 "SQL Server",
                 "HTML5",
@@ -700,13 +697,10 @@
             "shortDesc": "A social sharing and networking website for local businesses around the US",
             "auxImgAspectRatio": 64.3,
             "techSpecs": [
-                "Laravel 5.7",
-                "ElasticSearch",
                 "Classic ASP",
                 "SQL Server",
                 "HTML5",
                 "CSS3",
-                "Bootstrap",
                 "jQuery",
                 "PHP",
                 "Adobe Photoshop",
@@ -977,7 +971,6 @@
                 "Adobe Photoshop",
                 "Adobe Illustrator",
                 "Laravel 5.7",
-                "ElasticSearch",
                 "Classic ASP",
                 "SQL Server",
                 "Oracle"
@@ -1323,11 +1316,9 @@
                 "CSS3",
                 "Bootstrap",
                 "jQuery",
-                "Laravel 5.7",
-                "ElasticSearch",
-                "Classic ASP",
-                "SQL Server",
-                "Oracle"
+                "Wordpress",
+                "PHP",
+                "SQL Server"
             ],
             "auxImgs": [],
             "previewImgUrl": "https://firebasestorage.googleapis.com/v0/b/webfolio-4c731.appspot.com/o/portfolio%2Fd53a8150-0c67-4833-be4d-f3f48d04d650.jpg?alt=media&token=9d10fe95-4e65-4227-b370-a2779c49d7bb",
