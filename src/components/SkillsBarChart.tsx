@@ -1,8 +1,9 @@
 'use client'
-
+import { useState, useMemo } from 'react'
 import { useTheme } from '@/contexts/ThemeContext'
+import { Calendar, ChevronUp, ChevronDown } from 'lucide-react'
 
-interface TechSpec {
+export interface TechSpec {
     _id: string
     title: string
     from: string
@@ -20,9 +21,15 @@ const SkillsBarChart = ({ techSpecs }: SkillsBarChartProps) => {
     const timelineEnd = currentYear
     const timelineSpan = timelineEnd - timelineStart + 1
 
-    // Calculate years of experience and timeline positioning for each skill
-    const skillsWithTimeline = techSpecs
-        .map((skill) => {
+    type SortMethod = 'alphabetical' | 'experience'
+    type SortDirection = 'asc' | 'desc'
+
+    const [sortMethod, setSortMethod] = useState<SortMethod>('experience')
+    const [sortDirection, setSortDirection] = useState<SortDirection>('desc')
+
+    // Compute the base skill objects with timeline information
+    const skillsWithTimelineBase = useMemo(() => {
+        return techSpecs.map((skill) => {
             const fromYear = parseInt(skill.from)
             const toYear = skill.to ? parseInt(skill.to) : currentYear
             const yearsOfExperience = toYear - fromYear + 1
@@ -41,10 +48,82 @@ const SkillsBarChart = ({ techSpecs }: SkillsBarChartProps) => {
                 durationPercentage,
             }
         })
-        .sort((a, b) => b.yearsOfExperience - a.yearsOfExperience) // Sort by experience (highest first)
+    }, [techSpecs, currentYear, timelineStart, timelineSpan])
+
+    // Sort the skills according to the selected method and direction
+    const skillsWithTimeline = useMemo(() => {
+        const sorted = [...skillsWithTimelineBase]
+        if (sortMethod === 'alphabetical') {
+            sorted.sort((a, b) => a.title.localeCompare(b.title))
+        } else {
+            sorted.sort((a, b) => a.yearsOfExperience - b.yearsOfExperience)
+        }
+        if (sortDirection === 'desc') {
+            sorted.reverse()
+        }
+        return sorted
+    }, [skillsWithTimelineBase, sortMethod, sortDirection])
+
+    const toggleSortMethod = () => {
+        const method: SortMethod =
+            sortMethod === 'alphabetical' ? 'experience' : 'alphabetical'
+        setSortMethod(method)
+        if (method === 'alphabetical') {
+            setSortDirection('asc')
+        } else {
+            setSortDirection('desc')
+        }
+    }
+
+    const toggleSortDirection = () => {
+        setSortDirection((d) => (d === 'asc' ? 'desc' : 'asc'))
+    }
 
     return (
         <div className="w-full max-w-6xl mx-auto p-6">
+            {/* Sorting Controls */}
+            <div className="mb-3 flex flex-wrap items-center justify-end space-x-4">
+                <button
+                    data-testid="sort-method-icon"
+                    onClick={toggleSortMethod}
+                    className="p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer"
+                    title={
+                        sortMethod === 'experience'
+                            ? 'Sort by Skills Alphabetically'
+                            : 'Sort by Years of Experience'
+                    }
+                >
+                    {sortMethod !== 'experience' ? (
+                        <Calendar className="w-5 h-5 text-gray-600 dark:text-gray-400" />
+                    ) : (
+                        <svg
+                            className="w-5 h-5 text-gray-600 dark:text-gray-400"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                            />
+                        </svg>
+                    )}
+                </button>
+                <button
+                    data-testid="sort-direction-icon"
+                    onClick={toggleSortDirection}
+                    className="p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700"
+                    title={sortDirection === 'asc' ? 'Descending' : 'Ascending'}
+                >
+                    {sortDirection === 'asc' ? (
+                        <ChevronUp className="w-5 h-5 text-gray-600 dark:text-gray-400 cursor-pointer" />
+                    ) : (
+                        <ChevronDown className="w-5 h-5 text-gray-600 dark:text-gray-400 cursor-pointer" />
+                    )}
+                </button>
+            </div>
             {/* Timeline Header */}
             <div className="mb-8">
                 <div className="flex justify-between text-xs text-gray-500 dark:text-gray-400 mb-2">
