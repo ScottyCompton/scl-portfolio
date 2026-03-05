@@ -11,7 +11,7 @@ const SkillsPage = () => {
         <div className="min-h-screen">
             <main className="pt-16">
                 {/* Header */}
-                <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+                <section className="px-4 sm:px-6 lg:px-8 pt-8 pb-6 sm:pt-8 sm:pb-8 lg:pt-8 lg:pb-10">
                     <div className="max-w-7xl mx-auto text-center">
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
                             Skills & Experience

@@ -46,6 +46,22 @@ const itemsMock = {
     },
 }
 
+const categoriesErrorMock = {
+    request: { query: GET_CATEGORIES_QUERY },
+    error: new Error('Network error'),
+}
+
+const noActiveCategoriesMock = {
+    request: { query: GET_CATEGORIES_QUERY },
+    result: {
+        data: {
+            categories: [
+                { _id: 'c1', category: 'Web', displayOrder: 1, active: false },
+            ],
+        },
+    },
+}
+
 describe('PortfolioCategories', () => {
     it('renders active categories and opens modal on project click', async () => {
         renderWithProviders(<PortfolioCategories />, {
@@ -58,5 +74,75 @@ describe('PortfolioCategories', () => {
         expect(
             document.getElementById('project-modal-container')
         ).toBeInTheDocument()
+    })
+
+    it('shows error message on query error', async () => {
+        renderWithProviders(<PortfolioCategories />, {
+            apolloMocks: [categoriesErrorMock],
+        })
+        expect(
+            await screen.findByText(/Error loading categories/)
+        ).toBeInTheDocument()
+    })
+
+    it('shows no active categories message when none are active', async () => {
+        renderWithProviders(<PortfolioCategories />, {
+            apolloMocks: [noActiveCategoriesMock],
+        })
+        expect(
+            await screen.findByText('No active categories found.')
+        ).toBeInTheDocument()
+    })
+
+    it('sorts categories by displayOrder', async () => {
+        const sortedCategoriesMock = {
+            request: { query: GET_CATEGORIES_QUERY },
+            result: {
+                data: {
+                    categories: [
+                        {
+                            _id: 'c1',
+                            category: 'Zebra',
+                            displayOrder: 2,
+                            active: true,
+                        },
+                        {
+                            _id: 'c2',
+                            category: 'Apple',
+                            displayOrder: 1,
+                            active: true,
+                        },
+                    ],
+                },
+            },
+        }
+        const itemsMockC1 = {
+            request: {
+                query: GET_PORTFOLIO_ITEMS_QUERY,
+                variables: { categoryId: 'c1' },
+            },
+            result: {
+                data: {
+                    portfolioItems: [],
+                },
+            },
+        }
+        const itemsMockC2 = {
+            request: {
+                query: GET_PORTFOLIO_ITEMS_QUERY,
+                variables: { categoryId: 'c2' },
+            },
+            result: {
+                data: {
+                    portfolioItems: [],
+                },
+            },
+        }
+        renderWithProviders(<PortfolioCategories />, {
+            apolloMocks: [sortedCategoriesMock, itemsMockC1, itemsMockC2],
+        })
+        const categories = await screen.findAllByRole('heading', { level: 3 })
+        expect(categories[0]).toHaveTextContent('Apple')
+        expect(categories[1]).toHaveTextContent('Zebra')
     })
 })
